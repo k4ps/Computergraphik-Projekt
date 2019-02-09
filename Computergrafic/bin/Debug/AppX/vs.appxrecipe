@@ -1,0 +1,2391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-PVGTF9S</Machine>
+    <WindowsUser>mayer</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>fcf5b03e-be68-4c5c-bad2-11eb0f2cad3f</PackageIdentityName>
+    <PackageIdentityPublisher>CN=mayer</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\mayer\source\repos\Computergrafic\Computergrafic\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\mayer\source\repos\Computergrafic\Computergrafic\bin\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>F938C8D989FFF2A72E250B6B0DDC09ECBE4470F14511DF1211964CAA4BB74EF7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>fcf5b03e-be68-4c5c-bad2-11eb0f2cad3f_1.0.0.0_neutral__8jkjney0z7bbm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>fcf5b03e-be68-4c5c-bad2-11eb0f2cad3f_8jkjney0z7bbm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>fcf5b03e-be68-4c5c-bad2-11eb0f2cad3f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=mayer</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-09T10:34:39.596</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\index.html">
+      <PackagePath>index.html</PackagePath>
+      <Modified>2019-02-09T10:35:36.089</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-04T15:31:00.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2019-02-09T10:20:03.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\js\three.js">
+      <PackagePath>js\three.js</PackagePath>
+      <Modified>2019-02-09T10:34:06.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationAction.js">
+      <PackagePath>src\animation\AnimationAction.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationClip.js">
+      <PackagePath>src\animation\AnimationClip.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationMixer.js">
+      <PackagePath>src\animation\AnimationMixer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationObjectGroup.js">
+      <PackagePath>src\animation\AnimationObjectGroup.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationUtils.js">
+      <PackagePath>src\animation\AnimationUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\KeyframeTrack.js">
+      <PackagePath>src\animation\KeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\PropertyBinding.js">
+      <PackagePath>src\animation\PropertyBinding.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\PropertyMixer.js">
+      <PackagePath>src\animation\PropertyMixer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\BooleanKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\BooleanKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\ColorKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\ColorKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\NumberKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\NumberKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\QuaternionKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\QuaternionKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\StringKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\StringKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\VectorKeyframeTrack.js">
+      <PackagePath>src\animation\tracks\VectorKeyframeTrack.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\Audio.js">
+      <PackagePath>src\audio\Audio.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioAnalyser.js">
+      <PackagePath>src\audio\AudioAnalyser.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioContext.js">
+      <PackagePath>src\audio\AudioContext.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioListener.js">
+      <PackagePath>src\audio\AudioListener.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\PositionalAudio.js">
+      <PackagePath>src\audio\PositionalAudio.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\ArrayCamera.js">
+      <PackagePath>src\cameras\ArrayCamera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\Camera.js">
+      <PackagePath>src\cameras\Camera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\CubeCamera.js">
+      <PackagePath>src\cameras\CubeCamera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\OrthographicCamera.js">
+      <PackagePath>src\cameras\OrthographicCamera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\PerspectiveCamera.js">
+      <PackagePath>src\cameras\PerspectiveCamera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\StereoCamera.js">
+      <PackagePath>src\cameras\StereoCamera.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\constants.js">
+      <PackagePath>src\constants.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\BufferAttribute.js">
+      <PackagePath>src\core\BufferAttribute.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\BufferGeometry.js">
+      <PackagePath>src\core\BufferGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Clock.js">
+      <PackagePath>src\core\Clock.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\DirectGeometry.js">
+      <PackagePath>src\core\DirectGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\EventDispatcher.js">
+      <PackagePath>src\core\EventDispatcher.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Face3.js">
+      <PackagePath>src\core\Face3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Geometry.js">
+      <PackagePath>src\core\Geometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedBufferAttribute.js">
+      <PackagePath>src\core\InstancedBufferAttribute.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedBufferGeometry.js">
+      <PackagePath>src\core\InstancedBufferGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedInterleavedBuffer.js">
+      <PackagePath>src\core\InstancedInterleavedBuffer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InterleavedBuffer.js">
+      <PackagePath>src\core\InterleavedBuffer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InterleavedBufferAttribute.js">
+      <PackagePath>src\core\InterleavedBufferAttribute.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Layers.js">
+      <PackagePath>src\core\Layers.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Object3D.js">
+      <PackagePath>src\core\Object3D.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Raycaster.js">
+      <PackagePath>src\core\Raycaster.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Uniform.js">
+      <PackagePath>src\core\Uniform.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Curve.js">
+      <PackagePath>src\extras\core\Curve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\CurvePath.js">
+      <PackagePath>src\extras\core\CurvePath.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Font.js">
+      <PackagePath>src\extras\core\Font.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Interpolations.js">
+      <PackagePath>src\extras\core\Interpolations.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Path.js">
+      <PackagePath>src\extras\core\Path.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Shape.js">
+      <PackagePath>src\extras\core\Shape.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\ShapePath.js">
+      <PackagePath>src\extras\core\ShapePath.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\ArcCurve.js">
+      <PackagePath>src\extras\curves\ArcCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CatmullRomCurve3.js">
+      <PackagePath>src\extras\curves\CatmullRomCurve3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CubicBezierCurve.js">
+      <PackagePath>src\extras\curves\CubicBezierCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CubicBezierCurve3.js">
+      <PackagePath>src\extras\curves\CubicBezierCurve3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\Curves.js">
+      <PackagePath>src\extras\curves\Curves.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\EllipseCurve.js">
+      <PackagePath>src\extras\curves\EllipseCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\LineCurve.js">
+      <PackagePath>src\extras\curves\LineCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\LineCurve3.js">
+      <PackagePath>src\extras\curves\LineCurve3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\QuadraticBezierCurve.js">
+      <PackagePath>src\extras\curves\QuadraticBezierCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\QuadraticBezierCurve3.js">
+      <PackagePath>src\extras\curves\QuadraticBezierCurve3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\SplineCurve.js">
+      <PackagePath>src\extras\curves\SplineCurve.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\Earcut.js">
+      <PackagePath>src\extras\Earcut.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\ImageUtils.js">
+      <PackagePath>src\extras\ImageUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\objects\ImmediateRenderObject.js">
+      <PackagePath>src\extras\objects\ImmediateRenderObject.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\ShapeUtils.js">
+      <PackagePath>src\extras\ShapeUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\BoxGeometry.js">
+      <PackagePath>src\geometries\BoxGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\CircleGeometry.js">
+      <PackagePath>src\geometries\CircleGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ConeGeometry.js">
+      <PackagePath>src\geometries\ConeGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\CylinderGeometry.js">
+      <PackagePath>src\geometries\CylinderGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\DodecahedronGeometry.js">
+      <PackagePath>src\geometries\DodecahedronGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\EdgesGeometry.js">
+      <PackagePath>src\geometries\EdgesGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ExtrudeGeometry.js">
+      <PackagePath>src\geometries\ExtrudeGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\Geometries.js">
+      <PackagePath>src\geometries\Geometries.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\IcosahedronGeometry.js">
+      <PackagePath>src\geometries\IcosahedronGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\LatheGeometry.js">
+      <PackagePath>src\geometries\LatheGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\OctahedronGeometry.js">
+      <PackagePath>src\geometries\OctahedronGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ParametricGeometry.js">
+      <PackagePath>src\geometries\ParametricGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\PlaneGeometry.js">
+      <PackagePath>src\geometries\PlaneGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\PolyhedronGeometry.js">
+      <PackagePath>src\geometries\PolyhedronGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\RingGeometry.js">
+      <PackagePath>src\geometries\RingGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ShapeGeometry.js">
+      <PackagePath>src\geometries\ShapeGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\SphereGeometry.js">
+      <PackagePath>src\geometries\SphereGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TetrahedronGeometry.js">
+      <PackagePath>src\geometries\TetrahedronGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TextGeometry.js">
+      <PackagePath>src\geometries\TextGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TorusGeometry.js">
+      <PackagePath>src\geometries\TorusGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TorusKnotGeometry.js">
+      <PackagePath>src\geometries\TorusKnotGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TubeGeometry.js">
+      <PackagePath>src\geometries\TubeGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\WireframeGeometry.js">
+      <PackagePath>src\geometries\WireframeGeometry.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\ArrowHelper.js">
+      <PackagePath>src\helpers\ArrowHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\AxesHelper.js">
+      <PackagePath>src\helpers\AxesHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\Box3Helper.js">
+      <PackagePath>src\helpers\Box3Helper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\BoxHelper.js">
+      <PackagePath>src\helpers\BoxHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\CameraHelper.js">
+      <PackagePath>src\helpers\CameraHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\DirectionalLightHelper.js">
+      <PackagePath>src\helpers\DirectionalLightHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\FaceNormalsHelper.js">
+      <PackagePath>src\helpers\FaceNormalsHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\GridHelper.js">
+      <PackagePath>src\helpers\GridHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\HemisphereLightHelper.js">
+      <PackagePath>src\helpers\HemisphereLightHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PlaneHelper.js">
+      <PackagePath>src\helpers\PlaneHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PointLightHelper.js">
+      <PackagePath>src\helpers\PointLightHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PolarGridHelper.js">
+      <PackagePath>src\helpers\PolarGridHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\RectAreaLightHelper.js">
+      <PackagePath>src\helpers\RectAreaLightHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\SkeletonHelper.js">
+      <PackagePath>src\helpers\SkeletonHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\SpotLightHelper.js">
+      <PackagePath>src\helpers\SpotLightHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\VertexNormalsHelper.js">
+      <PackagePath>src\helpers\VertexNormalsHelper.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\AmbientLight.js">
+      <PackagePath>src\lights\AmbientLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\DirectionalLight.js">
+      <PackagePath>src\lights\DirectionalLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\DirectionalLightShadow.js">
+      <PackagePath>src\lights\DirectionalLightShadow.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\HemisphereLight.js">
+      <PackagePath>src\lights\HemisphereLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\Light.js">
+      <PackagePath>src\lights\Light.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\LightShadow.js">
+      <PackagePath>src\lights\LightShadow.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\PointLight.js">
+      <PackagePath>src\lights\PointLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\RectAreaLight.js">
+      <PackagePath>src\lights\RectAreaLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\SpotLight.js">
+      <PackagePath>src\lights\SpotLight.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\SpotLightShadow.js">
+      <PackagePath>src\lights\SpotLightShadow.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\AnimationLoader.js">
+      <PackagePath>src\loaders\AnimationLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\AudioLoader.js">
+      <PackagePath>src\loaders\AudioLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\BufferGeometryLoader.js">
+      <PackagePath>src\loaders\BufferGeometryLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\Cache.js">
+      <PackagePath>src\loaders\Cache.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\CompressedTextureLoader.js">
+      <PackagePath>src\loaders\CompressedTextureLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\CubeTextureLoader.js">
+      <PackagePath>src\loaders\CubeTextureLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\DataTextureLoader.js">
+      <PackagePath>src\loaders\DataTextureLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\FileLoader.js">
+      <PackagePath>src\loaders\FileLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\FontLoader.js">
+      <PackagePath>src\loaders\FontLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ImageBitmapLoader.js">
+      <PackagePath>src\loaders\ImageBitmapLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ImageLoader.js">
+      <PackagePath>src\loaders\ImageLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\Loader.js">
+      <PackagePath>src\loaders\Loader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\LoaderUtils.js">
+      <PackagePath>src\loaders\LoaderUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\LoadingManager.js">
+      <PackagePath>src\loaders\LoadingManager.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\MaterialLoader.js">
+      <PackagePath>src\loaders\MaterialLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ObjectLoader.js">
+      <PackagePath>src\loaders\ObjectLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\TextureLoader.js">
+      <PackagePath>src\loaders\TextureLoader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\LineBasicMaterial.js">
+      <PackagePath>src\materials\LineBasicMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\LineDashedMaterial.js">
+      <PackagePath>src\materials\LineDashedMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\Material.js">
+      <PackagePath>src\materials\Material.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\Materials.js">
+      <PackagePath>src\materials\Materials.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshBasicMaterial.js">
+      <PackagePath>src\materials\MeshBasicMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshDepthMaterial.js">
+      <PackagePath>src\materials\MeshDepthMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshDistanceMaterial.js">
+      <PackagePath>src\materials\MeshDistanceMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshLambertMaterial.js">
+      <PackagePath>src\materials\MeshLambertMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshMatcapMaterial.js">
+      <PackagePath>src\materials\MeshMatcapMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshNormalMaterial.js">
+      <PackagePath>src\materials\MeshNormalMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshPhongMaterial.js">
+      <PackagePath>src\materials\MeshPhongMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshPhysicalMaterial.js">
+      <PackagePath>src\materials\MeshPhysicalMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshStandardMaterial.js">
+      <PackagePath>src\materials\MeshStandardMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshToonMaterial.js">
+      <PackagePath>src\materials\MeshToonMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\PointsMaterial.js">
+      <PackagePath>src\materials\PointsMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\RawShaderMaterial.js">
+      <PackagePath>src\materials\RawShaderMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\ShaderMaterial.js">
+      <PackagePath>src\materials\ShaderMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\ShadowMaterial.js">
+      <PackagePath>src\materials\ShadowMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\SpriteMaterial.js">
+      <PackagePath>src\materials\SpriteMaterial.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Box2.js">
+      <PackagePath>src\math\Box2.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Box3.js">
+      <PackagePath>src\math\Box3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Color.js">
+      <PackagePath>src\math\Color.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Cylindrical.js">
+      <PackagePath>src\math\Cylindrical.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Euler.js">
+      <PackagePath>src\math\Euler.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Frustum.js">
+      <PackagePath>src\math\Frustum.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Interpolant.js">
+      <PackagePath>src\math\Interpolant.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\CubicInterpolant.js">
+      <PackagePath>src\math\interpolants\CubicInterpolant.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\DiscreteInterpolant.js">
+      <PackagePath>src\math\interpolants\DiscreteInterpolant.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\LinearInterpolant.js">
+      <PackagePath>src\math\interpolants\LinearInterpolant.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\QuaternionLinearInterpolant.js">
+      <PackagePath>src\math\interpolants\QuaternionLinearInterpolant.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Line3.js">
+      <PackagePath>src\math\Line3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Math.js">
+      <PackagePath>src\math\Math.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Matrix3.js">
+      <PackagePath>src\math\Matrix3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Matrix4.js">
+      <PackagePath>src\math\Matrix4.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Plane.js">
+      <PackagePath>src\math\Plane.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Quaternion.js">
+      <PackagePath>src\math\Quaternion.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Ray.js">
+      <PackagePath>src\math\Ray.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Sphere.js">
+      <PackagePath>src\math\Sphere.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Spherical.js">
+      <PackagePath>src\math\Spherical.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Triangle.js">
+      <PackagePath>src\math\Triangle.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector2.js">
+      <PackagePath>src\math\Vector2.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector3.js">
+      <PackagePath>src\math\Vector3.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector4.js">
+      <PackagePath>src\math\Vector4.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Bone.js">
+      <PackagePath>src\objects\Bone.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Group.js">
+      <PackagePath>src\objects\Group.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Line.js">
+      <PackagePath>src\objects\Line.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LineLoop.js">
+      <PackagePath>src\objects\LineLoop.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LineSegments.js">
+      <PackagePath>src\objects\LineSegments.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LOD.js">
+      <PackagePath>src\objects\LOD.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Mesh.js">
+      <PackagePath>src\objects\Mesh.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Points.js">
+      <PackagePath>src\objects\Points.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Skeleton.js">
+      <PackagePath>src\objects\Skeleton.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\SkinnedMesh.js">
+      <PackagePath>src\objects\SkinnedMesh.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Sprite.js">
+      <PackagePath>src\objects\Sprite.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\polyfills.js">
+      <PackagePath>src\polyfills.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\alphamap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\alphamap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\alphamap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\alphamap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\alphatest_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\alphatest_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\aomap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\aomap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\aomap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\aomap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\beginnormal_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\beginnormal_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\begin_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\begin_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\bsdfs.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\bsdfs.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\bumpmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\bumpmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\clipping_planes_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\clipping_planes_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\clipping_planes_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\clipping_planes_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\clipping_planes_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\clipping_planes_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\clipping_planes_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\clipping_planes_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\color_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\color_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\color_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\color_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\color_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\color_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\color_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\color_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\common.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\common.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\cube_uv_reflection_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\cube_uv_reflection_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\defaultnormal_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\defaultnormal_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\displacementmap_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\displacementmap_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\displacementmap_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\displacementmap_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\dithering_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\dithering_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\dithering_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\dithering_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\emissivemap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\emissivemap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\emissivemap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\emissivemap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\encodings_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\encodings_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\encodings_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\encodings_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\envmap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\envmap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\envmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\envmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\envmap_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\envmap_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\envmap_physical_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\envmap_physical_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\envmap_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\envmap_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\fog_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\fog_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\fog_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\fog_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\fog_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\fog_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\fog_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\fog_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\gradientmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\gradientmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lightmap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lightmap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lightmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lightmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_fragment_begin.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_fragment_begin.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_fragment_end.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_fragment_end.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_fragment_maps.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_fragment_maps.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_lambert_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_lambert_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_pars_begin.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_pars_begin.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_phong_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_phong_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_phong_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_phong_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_physical_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_physical_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\lights_physical_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\lights_physical_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\logdepthbuf_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\logdepthbuf_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\logdepthbuf_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\logdepthbuf_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\logdepthbuf_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\logdepthbuf_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\logdepthbuf_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\logdepthbuf_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\map_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\map_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\map_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\map_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\map_particle_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\map_particle_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\map_particle_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\map_particle_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\metalnessmap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\metalnessmap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\metalnessmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\metalnessmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\morphnormal_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\morphnormal_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\morphtarget_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\morphtarget_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\morphtarget_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\morphtarget_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\normalmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\normalmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\packing.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\packing.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\premultiplied_alpha_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\premultiplied_alpha_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\project_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\project_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\roughnessmap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\roughnessmap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\roughnessmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\roughnessmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\shadowmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\shadowmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\shadowmap_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\shadowmap_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\shadowmap_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\shadowmap_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\shadowmask_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\shadowmask_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\skinbase_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\skinbase_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\skinning_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\skinning_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\skinning_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\skinning_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\skinnormal_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\skinnormal_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\specularmap_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\specularmap_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\specularmap_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\specularmap_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\tonemapping_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\tonemapping_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\tonemapping_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\tonemapping_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv2_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv2_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv2_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv2_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv2_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv2_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv_pars_fragment.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv_pars_fragment.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv_pars_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv_pars_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\uv_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\uv_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk\worldpos_vertex.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderChunk\worldpos_vertex.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib.js">
+      <PackagePath>src\renderers\shaders\ShaderLib.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\background_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\background_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\background_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\background_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\cube_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\cube_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\cube_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\cube_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\depth_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\depth_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\depth_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\depth_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\distanceRGBA_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\distanceRGBA_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\distanceRGBA_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\distanceRGBA_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\equirect_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\equirect_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\equirect_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\equirect_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\linedashed_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\linedashed_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\linedashed_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\linedashed_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshbasic_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshbasic_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshbasic_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshbasic_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshlambert_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshlambert_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshlambert_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshlambert_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshmatcap_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshmatcap_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshmatcap_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshmatcap_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshphong_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshphong_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshphong_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshphong_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshphysical_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshphysical_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\meshphysical_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\meshphysical_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\normal_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\normal_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\normal_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\normal_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\points_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\points_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\points_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\points_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\shadow_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\shadow_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\shadow_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\shadow_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\sprite_frag.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\sprite_frag.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib\sprite_vert.glsl.js">
+      <PackagePath>src\renderers\shaders\ShaderLib\sprite_vert.glsl.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\UniformsLib.js">
+      <PackagePath>src\renderers\shaders\UniformsLib.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\UniformsUtils.js">
+      <PackagePath>src\renderers\shaders\UniformsUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGL2Renderer.js">
+      <PackagePath>src\renderers\WebGL2Renderer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLMultisampleRenderTarget.js">
+      <PackagePath>src\renderers\WebGLMultisampleRenderTarget.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderer.js">
+      <PackagePath>src\renderers\WebGLRenderer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderTarget.js">
+      <PackagePath>src\renderers\WebGLRenderTarget.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderTargetCube.js">
+      <PackagePath>src\renderers\WebGLRenderTargetCube.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLAnimation.js">
+      <PackagePath>src\renderers\webgl\WebGLAnimation.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLAttributes.js">
+      <PackagePath>src\renderers\webgl\WebGLAttributes.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLBackground.js">
+      <PackagePath>src\renderers\webgl\WebGLBackground.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLBufferRenderer.js">
+      <PackagePath>src\renderers\webgl\WebGLBufferRenderer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLCapabilities.js">
+      <PackagePath>src\renderers\webgl\WebGLCapabilities.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLClipping.js">
+      <PackagePath>src\renderers\webgl\WebGLClipping.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLExtensions.js">
+      <PackagePath>src\renderers\webgl\WebGLExtensions.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLGeometries.js">
+      <PackagePath>src\renderers\webgl\WebGLGeometries.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLIndexedBufferRenderer.js">
+      <PackagePath>src\renderers\webgl\WebGLIndexedBufferRenderer.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLInfo.js">
+      <PackagePath>src\renderers\webgl\WebGLInfo.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLLights.js">
+      <PackagePath>src\renderers\webgl\WebGLLights.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLMorphtargets.js">
+      <PackagePath>src\renderers\webgl\WebGLMorphtargets.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLObjects.js">
+      <PackagePath>src\renderers\webgl\WebGLObjects.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLProgram.js">
+      <PackagePath>src\renderers\webgl\WebGLProgram.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLPrograms.js">
+      <PackagePath>src\renderers\webgl\WebGLPrograms.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLProperties.js">
+      <PackagePath>src\renderers\webgl\WebGLProperties.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLRenderLists.js">
+      <PackagePath>src\renderers\webgl\WebGLRenderLists.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLRenderStates.js">
+      <PackagePath>src\renderers\webgl\WebGLRenderStates.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLShader.js">
+      <PackagePath>src\renderers\webgl\WebGLShader.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLShadowMap.js">
+      <PackagePath>src\renderers\webgl\WebGLShadowMap.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLState.js">
+      <PackagePath>src\renderers\webgl\WebGLState.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLTextures.js">
+      <PackagePath>src\renderers\webgl\WebGLTextures.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLUniforms.js">
+      <PackagePath>src\renderers\webgl\WebGLUniforms.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLUtils.js">
+      <PackagePath>src\renderers\webgl\WebGLUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webvr\WebVRManager.js">
+      <PackagePath>src\renderers\webvr\WebVRManager.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webvr\WebVRUtils.js">
+      <PackagePath>src\renderers\webvr\WebVRUtils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webvr\WebXRManager.js">
+      <PackagePath>src\renderers\webvr\WebXRManager.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\Fog.js">
+      <PackagePath>src\scenes\Fog.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\FogExp2.js">
+      <PackagePath>src\scenes\FogExp2.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\Scene.js">
+      <PackagePath>src\scenes\Scene.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CanvasTexture.js">
+      <PackagePath>src\textures\CanvasTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CompressedTexture.js">
+      <PackagePath>src\textures\CompressedTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CubeTexture.js">
+      <PackagePath>src\textures\CubeTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DataTexture.js">
+      <PackagePath>src\textures\DataTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DataTexture3D.js">
+      <PackagePath>src\textures\DataTexture3D.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DepthTexture.js">
+      <PackagePath>src\textures\DepthTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\Texture.js">
+      <PackagePath>src\textures\Texture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\VideoTexture.js">
+      <PackagePath>src\textures\VideoTexture.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\Three.js">
+      <PackagePath>src\Three.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\Three.Legacy.js">
+      <PackagePath>src\Three.Legacy.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\utils.js">
+      <PackagePath>src\utils.js</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2019-02-04T15:57:24.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationAction.d.ts">
+      <PackagePath>src\animation\AnimationAction.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationClip.d.ts">
+      <PackagePath>src\animation\AnimationClip.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationMixer.d.ts">
+      <PackagePath>src\animation\AnimationMixer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationObjectGroup.d.ts">
+      <PackagePath>src\animation\AnimationObjectGroup.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\AnimationUtils.d.ts">
+      <PackagePath>src\animation\AnimationUtils.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\KeyframeTrack.d.ts">
+      <PackagePath>src\animation\KeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\PropertyBinding.d.ts">
+      <PackagePath>src\animation\PropertyBinding.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\PropertyMixer.d.ts">
+      <PackagePath>src\animation\PropertyMixer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\BooleanKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\BooleanKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\ColorKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\ColorKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\NumberKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\NumberKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\QuaternionKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\QuaternionKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\StringKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\StringKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\animation\tracks\VectorKeyframeTrack.d.ts">
+      <PackagePath>src\animation\tracks\VectorKeyframeTrack.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\Audio.d.ts">
+      <PackagePath>src\audio\Audio.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioAnalyser.d.ts">
+      <PackagePath>src\audio\AudioAnalyser.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioContext.d.ts">
+      <PackagePath>src\audio\AudioContext.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\AudioListener.d.ts">
+      <PackagePath>src\audio\AudioListener.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\audio\PositionalAudio.d.ts">
+      <PackagePath>src\audio\PositionalAudio.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\ArrayCamera.d.ts">
+      <PackagePath>src\cameras\ArrayCamera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\Camera.d.ts">
+      <PackagePath>src\cameras\Camera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\CubeCamera.d.ts">
+      <PackagePath>src\cameras\CubeCamera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\OrthographicCamera.d.ts">
+      <PackagePath>src\cameras\OrthographicCamera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\PerspectiveCamera.d.ts">
+      <PackagePath>src\cameras\PerspectiveCamera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\cameras\StereoCamera.d.ts">
+      <PackagePath>src\cameras\StereoCamera.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\constants.d.ts">
+      <PackagePath>src\constants.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\BufferAttribute.d.ts">
+      <PackagePath>src\core\BufferAttribute.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\BufferGeometry.d.ts">
+      <PackagePath>src\core\BufferGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Clock.d.ts">
+      <PackagePath>src\core\Clock.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\DirectGeometry.d.ts">
+      <PackagePath>src\core\DirectGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\EventDispatcher.d.ts">
+      <PackagePath>src\core\EventDispatcher.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Face3.d.ts">
+      <PackagePath>src\core\Face3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Geometry.d.ts">
+      <PackagePath>src\core\Geometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedBufferAttribute.d.ts">
+      <PackagePath>src\core\InstancedBufferAttribute.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedBufferGeometry.d.ts">
+      <PackagePath>src\core\InstancedBufferGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InstancedInterleavedBuffer.d.ts">
+      <PackagePath>src\core\InstancedInterleavedBuffer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InterleavedBuffer.d.ts">
+      <PackagePath>src\core\InterleavedBuffer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\InterleavedBufferAttribute.d.ts">
+      <PackagePath>src\core\InterleavedBufferAttribute.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Layers.d.ts">
+      <PackagePath>src\core\Layers.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Object3D.d.ts">
+      <PackagePath>src\core\Object3D.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Raycaster.d.ts">
+      <PackagePath>src\core\Raycaster.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\core\Uniform.d.ts">
+      <PackagePath>src\core\Uniform.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Curve.d.ts">
+      <PackagePath>src\extras\core\Curve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\CurvePath.d.ts">
+      <PackagePath>src\extras\core\CurvePath.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Font.d.ts">
+      <PackagePath>src\extras\core\Font.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Path.d.ts">
+      <PackagePath>src\extras\core\Path.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\Shape.d.ts">
+      <PackagePath>src\extras\core\Shape.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\core\ShapePath.d.ts">
+      <PackagePath>src\extras\core\ShapePath.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\ArcCurve.d.ts">
+      <PackagePath>src\extras\curves\ArcCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CatmullRomCurve3.d.ts">
+      <PackagePath>src\extras\curves\CatmullRomCurve3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CubicBezierCurve.d.ts">
+      <PackagePath>src\extras\curves\CubicBezierCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\CubicBezierCurve3.d.ts">
+      <PackagePath>src\extras\curves\CubicBezierCurve3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\Curves.d.ts">
+      <PackagePath>src\extras\curves\Curves.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\EllipseCurve.d.ts">
+      <PackagePath>src\extras\curves\EllipseCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\LineCurve.d.ts">
+      <PackagePath>src\extras\curves\LineCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\LineCurve3.d.ts">
+      <PackagePath>src\extras\curves\LineCurve3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\QuadraticBezierCurve.d.ts">
+      <PackagePath>src\extras\curves\QuadraticBezierCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\QuadraticBezierCurve3.d.ts">
+      <PackagePath>src\extras\curves\QuadraticBezierCurve3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\curves\SplineCurve.d.ts">
+      <PackagePath>src\extras\curves\SplineCurve.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\ImageUtils.d.ts">
+      <PackagePath>src\extras\ImageUtils.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\objects\ImmediateRenderObject.d.ts">
+      <PackagePath>src\extras\objects\ImmediateRenderObject.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\extras\ShapeUtils.d.ts">
+      <PackagePath>src\extras\ShapeUtils.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\BoxGeometry.d.ts">
+      <PackagePath>src\geometries\BoxGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\CircleGeometry.d.ts">
+      <PackagePath>src\geometries\CircleGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ConeGeometry.d.ts">
+      <PackagePath>src\geometries\ConeGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\CylinderGeometry.d.ts">
+      <PackagePath>src\geometries\CylinderGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\DodecahedronGeometry.d.ts">
+      <PackagePath>src\geometries\DodecahedronGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\EdgesGeometry.d.ts">
+      <PackagePath>src\geometries\EdgesGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ExtrudeGeometry.d.ts">
+      <PackagePath>src\geometries\ExtrudeGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\Geometries.d.ts">
+      <PackagePath>src\geometries\Geometries.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\IcosahedronGeometry.d.ts">
+      <PackagePath>src\geometries\IcosahedronGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\LatheGeometry.d.ts">
+      <PackagePath>src\geometries\LatheGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\OctahedronGeometry.d.ts">
+      <PackagePath>src\geometries\OctahedronGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ParametricGeometry.d.ts">
+      <PackagePath>src\geometries\ParametricGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\PlaneGeometry.d.ts">
+      <PackagePath>src\geometries\PlaneGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\PolyhedronGeometry.d.ts">
+      <PackagePath>src\geometries\PolyhedronGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\RingGeometry.d.ts">
+      <PackagePath>src\geometries\RingGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\ShapeGeometry.d.ts">
+      <PackagePath>src\geometries\ShapeGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\SphereGeometry.d.ts">
+      <PackagePath>src\geometries\SphereGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TetrahedronGeometry.d.ts">
+      <PackagePath>src\geometries\TetrahedronGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TextGeometry.d.ts">
+      <PackagePath>src\geometries\TextGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TorusGeometry.d.ts">
+      <PackagePath>src\geometries\TorusGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TorusKnotGeometry.d.ts">
+      <PackagePath>src\geometries\TorusKnotGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\TubeGeometry.d.ts">
+      <PackagePath>src\geometries\TubeGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\geometries\WireframeGeometry.d.ts">
+      <PackagePath>src\geometries\WireframeGeometry.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\ArrowHelper.d.ts">
+      <PackagePath>src\helpers\ArrowHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\AxesHelper.d.ts">
+      <PackagePath>src\helpers\AxesHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\Box3Helper.d.ts">
+      <PackagePath>src\helpers\Box3Helper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\BoxHelper.d.ts">
+      <PackagePath>src\helpers\BoxHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\CameraHelper.d.ts">
+      <PackagePath>src\helpers\CameraHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\DirectionalLightHelper.d.ts">
+      <PackagePath>src\helpers\DirectionalLightHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\FaceNormalsHelper.d.ts">
+      <PackagePath>src\helpers\FaceNormalsHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\GridHelper.d.ts">
+      <PackagePath>src\helpers\GridHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\HemisphereLightHelper.d.ts">
+      <PackagePath>src\helpers\HemisphereLightHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PlaneHelper.d.ts">
+      <PackagePath>src\helpers\PlaneHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PointLightHelper.d.ts">
+      <PackagePath>src\helpers\PointLightHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\PolarGridHelper.d.ts">
+      <PackagePath>src\helpers\PolarGridHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\RectAreaLightHelper.d.ts">
+      <PackagePath>src\helpers\RectAreaLightHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\SkeletonHelper.d.ts">
+      <PackagePath>src\helpers\SkeletonHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\SpotLightHelper.d.ts">
+      <PackagePath>src\helpers\SpotLightHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\helpers\VertexNormalsHelper.d.ts">
+      <PackagePath>src\helpers\VertexNormalsHelper.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\AmbientLight.d.ts">
+      <PackagePath>src\lights\AmbientLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\DirectionalLight.d.ts">
+      <PackagePath>src\lights\DirectionalLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\DirectionalLightShadow.d.ts">
+      <PackagePath>src\lights\DirectionalLightShadow.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\HemisphereLight.d.ts">
+      <PackagePath>src\lights\HemisphereLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\Light.d.ts">
+      <PackagePath>src\lights\Light.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\LightShadow.d.ts">
+      <PackagePath>src\lights\LightShadow.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\PointLight.d.ts">
+      <PackagePath>src\lights\PointLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\RectAreaLight.d.ts">
+      <PackagePath>src\lights\RectAreaLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\SpotLight.d.ts">
+      <PackagePath>src\lights\SpotLight.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\lights\SpotLightShadow.d.ts">
+      <PackagePath>src\lights\SpotLightShadow.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\AnimationLoader.d.ts">
+      <PackagePath>src\loaders\AnimationLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\AudioLoader.d.ts">
+      <PackagePath>src\loaders\AudioLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\BufferGeometryLoader.d.ts">
+      <PackagePath>src\loaders\BufferGeometryLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\Cache.d.ts">
+      <PackagePath>src\loaders\Cache.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\CompressedTextureLoader.d.ts">
+      <PackagePath>src\loaders\CompressedTextureLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\CubeTextureLoader.d.ts">
+      <PackagePath>src\loaders\CubeTextureLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\DataTextureLoader.d.ts">
+      <PackagePath>src\loaders\DataTextureLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\FileLoader.d.ts">
+      <PackagePath>src\loaders\FileLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\FontLoader.d.ts">
+      <PackagePath>src\loaders\FontLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ImageBitmapLoader.d.ts">
+      <PackagePath>src\loaders\ImageBitmapLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ImageLoader.d.ts">
+      <PackagePath>src\loaders\ImageLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\Loader.d.ts">
+      <PackagePath>src\loaders\Loader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\LoaderUtils.d.ts">
+      <PackagePath>src\loaders\LoaderUtils.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\LoadingManager.d.ts">
+      <PackagePath>src\loaders\LoadingManager.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\MaterialLoader.d.ts">
+      <PackagePath>src\loaders\MaterialLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\ObjectLoader.d.ts">
+      <PackagePath>src\loaders\ObjectLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\loaders\TextureLoader.d.ts">
+      <PackagePath>src\loaders\TextureLoader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\LineBasicMaterial.d.ts">
+      <PackagePath>src\materials\LineBasicMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\LineDashedMaterial.d.ts">
+      <PackagePath>src\materials\LineDashedMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\Material.d.ts">
+      <PackagePath>src\materials\Material.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\Materials.d.ts">
+      <PackagePath>src\materials\Materials.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshBasicMaterial.d.ts">
+      <PackagePath>src\materials\MeshBasicMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshDepthMaterial.d.ts">
+      <PackagePath>src\materials\MeshDepthMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshLambertMaterial.d.ts">
+      <PackagePath>src\materials\MeshLambertMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshNormalMaterial.d.ts">
+      <PackagePath>src\materials\MeshNormalMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshPhongMaterial.d.ts">
+      <PackagePath>src\materials\MeshPhongMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshPhysicalMaterial.d.ts">
+      <PackagePath>src\materials\MeshPhysicalMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\MeshStandardMaterial.d.ts">
+      <PackagePath>src\materials\MeshStandardMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\PointsMaterial.d.ts">
+      <PackagePath>src\materials\PointsMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\RawShaderMaterial.d.ts">
+      <PackagePath>src\materials\RawShaderMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\ShaderMaterial.d.ts">
+      <PackagePath>src\materials\ShaderMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\ShadowMaterial.d.ts">
+      <PackagePath>src\materials\ShadowMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\materials\SpriteMaterial.d.ts">
+      <PackagePath>src\materials\SpriteMaterial.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Box2.d.ts">
+      <PackagePath>src\math\Box2.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Box3.d.ts">
+      <PackagePath>src\math\Box3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Color.d.ts">
+      <PackagePath>src\math\Color.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Cylindrical.d.ts">
+      <PackagePath>src\math\Cylindrical.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Euler.d.ts">
+      <PackagePath>src\math\Euler.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Frustum.d.ts">
+      <PackagePath>src\math\Frustum.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Interpolant.d.ts">
+      <PackagePath>src\math\Interpolant.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\CubicInterpolant.d.ts">
+      <PackagePath>src\math\interpolants\CubicInterpolant.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\DiscreteInterpolant.d.ts">
+      <PackagePath>src\math\interpolants\DiscreteInterpolant.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\LinearInterpolant.d.ts">
+      <PackagePath>src\math\interpolants\LinearInterpolant.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\interpolants\QuaternionLinearInterpolant.d.ts">
+      <PackagePath>src\math\interpolants\QuaternionLinearInterpolant.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Line3.d.ts">
+      <PackagePath>src\math\Line3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Math.d.ts">
+      <PackagePath>src\math\Math.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Matrix3.d.ts">
+      <PackagePath>src\math\Matrix3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Matrix4.d.ts">
+      <PackagePath>src\math\Matrix4.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Plane.d.ts">
+      <PackagePath>src\math\Plane.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Quaternion.d.ts">
+      <PackagePath>src\math\Quaternion.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Ray.d.ts">
+      <PackagePath>src\math\Ray.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Sphere.d.ts">
+      <PackagePath>src\math\Sphere.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Spherical.d.ts">
+      <PackagePath>src\math\Spherical.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Triangle.d.ts">
+      <PackagePath>src\math\Triangle.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector2.d.ts">
+      <PackagePath>src\math\Vector2.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector3.d.ts">
+      <PackagePath>src\math\Vector3.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\math\Vector4.d.ts">
+      <PackagePath>src\math\Vector4.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Bone.d.ts">
+      <PackagePath>src\objects\Bone.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Group.d.ts">
+      <PackagePath>src\objects\Group.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Line.d.ts">
+      <PackagePath>src\objects\Line.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LineLoop.d.ts">
+      <PackagePath>src\objects\LineLoop.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LineSegments.d.ts">
+      <PackagePath>src\objects\LineSegments.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\LOD.d.ts">
+      <PackagePath>src\objects\LOD.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Mesh.d.ts">
+      <PackagePath>src\objects\Mesh.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Points.d.ts">
+      <PackagePath>src\objects\Points.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Skeleton.d.ts">
+      <PackagePath>src\objects\Skeleton.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\SkinnedMesh.d.ts">
+      <PackagePath>src\objects\SkinnedMesh.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\objects\Sprite.d.ts">
+      <PackagePath>src\objects\Sprite.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\polyfills.d.ts">
+      <PackagePath>src\polyfills.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderChunk.d.ts">
+      <PackagePath>src\renderers\shaders\ShaderChunk.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\ShaderLib.d.ts">
+      <PackagePath>src\renderers\shaders\ShaderLib.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\UniformsLib.d.ts">
+      <PackagePath>src\renderers\shaders\UniformsLib.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\shaders\UniformsUtils.d.ts">
+      <PackagePath>src\renderers\shaders\UniformsUtils.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLMultisampleRenderTarget.d.ts">
+      <PackagePath>src\renderers\WebGLMultisampleRenderTarget.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderer.d.ts">
+      <PackagePath>src\renderers\WebGLRenderer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderTarget.d.ts">
+      <PackagePath>src\renderers\WebGLRenderTarget.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\WebGLRenderTargetCube.d.ts">
+      <PackagePath>src\renderers\WebGLRenderTargetCube.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLBufferRenderer.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLBufferRenderer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLCapabilities.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLCapabilities.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLClipping.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLClipping.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLExtensions.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLExtensions.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLGeometries.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLGeometries.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLIndexedBufferRenderer.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLIndexedBufferRenderer.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLInfo.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLInfo.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLLights.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLLights.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLObjects.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLObjects.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLProgram.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLProgram.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLPrograms.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLPrograms.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLProperties.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLProperties.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLRenderLists.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLRenderLists.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLShader.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLShader.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLShadowMap.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLShadowMap.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLState.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLState.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLTextures.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLTextures.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webgl\WebGLUniforms.d.ts">
+      <PackagePath>src\renderers\webgl\WebGLUniforms.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\renderers\webvr\WebVRManager.d.ts">
+      <PackagePath>src\renderers\webvr\WebVRManager.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\Fog.d.ts">
+      <PackagePath>src\scenes\Fog.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\FogExp2.d.ts">
+      <PackagePath>src\scenes\FogExp2.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\scenes\Scene.d.ts">
+      <PackagePath>src\scenes\Scene.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CanvasTexture.d.ts">
+      <PackagePath>src\textures\CanvasTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CompressedTexture.d.ts">
+      <PackagePath>src\textures\CompressedTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\CubeTexture.d.ts">
+      <PackagePath>src\textures\CubeTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DataTexture.d.ts">
+      <PackagePath>src\textures\DataTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DataTexture3D.d.ts">
+      <PackagePath>src\textures\DataTexture3D.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\DepthTexture.d.ts">
+      <PackagePath>src\textures\DepthTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\Texture.d.ts">
+      <PackagePath>src\textures\Texture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\textures\VideoTexture.d.ts">
+      <PackagePath>src\textures\VideoTexture.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\Three.d.ts">
+      <PackagePath>src\Three.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\src\Three.Legacy.d.ts">
+      <PackagePath>src\Three.Legacy.d.ts</PackagePath>
+      <Modified>2019-02-01T11:17:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mayer\source\repos\Computergrafic\Computergrafic\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-02-09T10:34:39.148</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

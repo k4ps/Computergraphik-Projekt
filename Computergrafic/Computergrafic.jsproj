@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>fcf5b03e-be68-4c5c-bad2-11eb0f2cad3f</ProjectGuid>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
+    <VisualStudioVersion>15.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>de-DE</DefaultLanguage>
+    <PackageCertificateKeyFile>Computergrafic_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="index.html" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="js\main.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\three.js" />
+    <Content Include="src\animation\AnimationAction.d.ts" />
+    <Content Include="src\animation\AnimationAction.js" />
+    <Content Include="src\animation\AnimationClip.d.ts" />
+    <Content Include="src\animation\AnimationClip.js" />
+    <Content Include="src\animation\AnimationMixer.d.ts" />
+    <Content Include="src\animation\AnimationMixer.js" />
+    <Content Include="src\animation\AnimationObjectGroup.d.ts" />
+    <Content Include="src\animation\AnimationObjectGroup.js" />
+    <Content Include="src\animation\AnimationUtils.d.ts" />
+    <Content Include="src\animation\AnimationUtils.js" />
+    <Content Include="src\animation\KeyframeTrack.d.ts" />
+    <Content Include="src\animation\KeyframeTrack.js" />
+    <Content Include="src\animation\PropertyBinding.d.ts" />
+    <Content Include="src\animation\PropertyBinding.js" />
+    <Content Include="src\animation\PropertyMixer.d.ts" />
+    <Content Include="src\animation\PropertyMixer.js" />
+    <Content Include="src\animation\tracks\BooleanKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\BooleanKeyframeTrack.js" />
+    <Content Include="src\animation\tracks\ColorKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\ColorKeyframeTrack.js" />
+    <Content Include="src\animation\tracks\NumberKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\NumberKeyframeTrack.js" />
+    <Content Include="src\animation\tracks\QuaternionKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\QuaternionKeyframeTrack.js" />
+    <Content Include="src\animation\tracks\StringKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\StringKeyframeTrack.js" />
+    <Content Include="src\animation\tracks\VectorKeyframeTrack.d.ts" />
+    <Content Include="src\animation\tracks\VectorKeyframeTrack.js" />
+    <Content Include="src\audio\Audio.d.ts" />
+    <Content Include="src\audio\Audio.js" />
+    <Content Include="src\audio\AudioAnalyser.d.ts" />
+    <Content Include="src\audio\AudioAnalyser.js" />
+    <Content Include="src\audio\AudioContext.d.ts" />
+    <Content Include="src\audio\AudioContext.js" />
+    <Content Include="src\audio\AudioListener.d.ts" />
+    <Content Include="src\audio\AudioListener.js" />
+    <Content Include="src\audio\PositionalAudio.d.ts" />
+    <Content Include="src\audio\PositionalAudio.js" />
+    <Content Include="src\cameras\ArrayCamera.d.ts" />
+    <Content Include="src\cameras\ArrayCamera.js" />
+    <Content Include="src\cameras\Camera.d.ts" />
+    <Content Include="src\cameras\Camera.js" />
+    <Content Include="src\cameras\CubeCamera.d.ts" />
+    <Content Include="src\cameras\CubeCamera.js" />
+    <Content Include="src\cameras\OrthographicCamera.d.ts" />
+    <Content Include="src\cameras\OrthographicCamera.js" />
+    <Content Include="src\cameras\PerspectiveCamera.d.ts" />
+    <Content Include="src\cameras\PerspectiveCamera.js" />
+    <Content Include="src\cameras\StereoCamera.d.ts" />
+    <Content Include="src\cameras\StereoCamera.js" />
+    <Content Include="src\constants.d.ts" />
+    <Content Include="src\constants.js" />
+    <Content Include="src\core\BufferAttribute.d.ts" />
+    <Content Include="src\core\BufferAttribute.js" />
+    <Content Include="src\core\BufferGeometry.d.ts" />
+    <Content Include="src\core\BufferGeometry.js" />
+    <Content Include="src\core\Clock.d.ts" />
+    <Content Include="src\core\Clock.js" />
+    <Content Include="src\core\DirectGeometry.d.ts" />
+    <Content Include="src\core\DirectGeometry.js" />
+    <Content Include="src\core\EventDispatcher.d.ts" />
+    <Content Include="src\core\EventDispatcher.js" />
+    <Content Include="src\core\Face3.d.ts" />
+    <Content Include="src\core\Face3.js" />
+    <Content Include="src\core\Geometry.d.ts" />
+    <Content Include="src\core\Geometry.js" />
+    <Content Include="src\core\InstancedBufferAttribute.d.ts" />
+    <Content Include="src\core\InstancedBufferAttribute.js" />
+    <Content Include="src\core\InstancedBufferGeometry.d.ts" />
+    <Content Include="src\core\InstancedBufferGeometry.js" />
+    <Content Include="src\core\InstancedInterleavedBuffer.d.ts" />
+    <Content Include="src\core\InstancedInterleavedBuffer.js" />
+    <Content Include="src\core\InterleavedBuffer.d.ts" />
+    <Content Include="src\core\InterleavedBuffer.js" />
+    <Content Include="src\core\InterleavedBufferAttribute.d.ts" />
+    <Content Include="src\core\InterleavedBufferAttribute.js" />
+    <Content Include="src\core\Layers.d.ts" />
+    <Content Include="src\core\Layers.js" />
+    <Content Include="src\core\Object3D.d.ts" />
+    <Content Include="src\core\Object3D.js" />
+    <Content Include="src\core\Raycaster.d.ts" />
+    <Content Include="src\core\Raycaster.js" />
+    <Content Include="src\core\Uniform.d.ts" />
+    <Content Include="src\core\Uniform.js" />
+    <Content Include="src\extras\core\Curve.d.ts" />
+    <Content Include="src\extras\core\Curve.js" />
+    <Content Include="src\extras\core\CurvePath.d.ts" />
+    <Content Include="src\extras\core\CurvePath.js" />
+    <Content Include="src\extras\core\Font.d.ts" />
+    <Content Include="src\extras\core\Font.js" />
+    <Content Include="src\extras\core\Interpolations.js" />
+    <Content Include="src\extras\core\Path.d.ts" />
+    <Content Include="src\extras\core\Path.js" />
+    <Content Include="src\extras\core\Shape.d.ts" />
+    <Content Include="src\extras\core\Shape.js" />
+    <Content Include="src\extras\core\ShapePath.d.ts" />
+    <Content Include="src\extras\core\ShapePath.js" />
+    <Content Include="src\extras\curves\ArcCurve.d.ts" />
+    <Content Include="src\extras\curves\ArcCurve.js" />
+    <Content Include="src\extras\curves\CatmullRomCurve3.d.ts" />
+    <Content Include="src\extras\curves\CatmullRomCurve3.js" />
+    <Content Include="src\extras\curves\CubicBezierCurve.d.ts" />
+    <Content Include="src\extras\curves\CubicBezierCurve.js" />
+    <Content Include="src\extras\curves\CubicBezierCurve3.d.ts" />
+    <Content Include="src\extras\curves\CubicBezierCurve3.js" />
+    <Content Include="src\extras\curves\Curves.d.ts" />
+    <Content Include="src\extras\curves\Curves.js" />
+    <Content Include="src\extras\curves\EllipseCurve.d.ts" />
+    <Content Include="src\extras\curves\EllipseCurve.js" />
+    <Content Include="src\extras\curves\LineCurve.d.ts" />
+    <Content Include="src\extras\curves\LineCurve.js" />
+    <Content Include="src\extras\curves\LineCurve3.d.ts" />
+    <Content Include="src\extras\curves\LineCurve3.js" />
+    <Content Include="src\extras\curves\QuadraticBezierCurve.d.ts" />
+    <Content Include="src\extras\curves\QuadraticBezierCurve.js" />
+    <Content Include="src\extras\curves\QuadraticBezierCurve3.d.ts" />
+    <Content Include="src\extras\curves\QuadraticBezierCurve3.js" />
+    <Content Include="src\extras\curves\SplineCurve.d.ts" />
+    <Content Include="src\extras\curves\SplineCurve.js" />
+    <Content Include="src\extras\Earcut.js" />
+    <Content Include="src\extras\ImageUtils.d.ts" />
+    <Content Include="src\extras\ImageUtils.js" />
+    <Content Include="src\extras\objects\ImmediateRenderObject.d.ts" />
+    <Content Include="src\extras\objects\ImmediateRenderObject.js" />
+    <Content Include="src\extras\ShapeUtils.d.ts" />
+    <Content Include="src\extras\ShapeUtils.js" />
+    <Content Include="src\geometries\BoxGeometry.d.ts" />
+    <Content Include="src\geometries\BoxGeometry.js" />
+    <Content Include="src\geometries\CircleGeometry.d.ts" />
+    <Content Include="src\geometries\CircleGeometry.js" />
+    <Content Include="src\geometries\ConeGeometry.d.ts" />
+    <Content Include="src\geometries\ConeGeometry.js" />
+    <Content Include="src\geometries\CylinderGeometry.d.ts" />
+    <Content Include="src\geometries\CylinderGeometry.js" />
+    <Content Include="src\geometries\DodecahedronGeometry.d.ts" />
+    <Content Include="src\geometries\DodecahedronGeometry.js" />
+    <Content Include="src\geometries\EdgesGeometry.d.ts" />
+    <Content Include="src\geometries\EdgesGeometry.js" />
+    <Content Include="src\geometries\ExtrudeGeometry.d.ts" />
+    <Content Include="src\geometries\ExtrudeGeometry.js" />
+    <Content Include="src\geometries\Geometries.d.ts" />
+    <Content Include="src\geometries\Geometries.js" />
+    <Content Include="src\geometries\IcosahedronGeometry.d.ts" />
+    <Content Include="src\geometries\IcosahedronGeometry.js" />
+    <Content Include="src\geometries\LatheGeometry.d.ts" />
+    <Content Include="src\geometries\LatheGeometry.js" />
+    <Content Include="src\geometries\OctahedronGeometry.d.ts" />
+    <Content Include="src\geometries\OctahedronGeometry.js" />
+    <Content Include="src\geometries\ParametricGeometry.d.ts" />
+    <Content Include="src\geometries\ParametricGeometry.js" />
+    <Content Include="src\geometries\PlaneGeometry.d.ts" />
+    <Content Include="src\geometries\PlaneGeometry.js" />
+    <Content Include="src\geometries\PolyhedronGeometry.d.ts" />
+    <Content Include="src\geometries\PolyhedronGeometry.js" />
+    <Content Include="src\geometries\RingGeometry.d.ts" />
+    <Content Include="src\geometries\RingGeometry.js" />
+    <Content Include="src\geometries\ShapeGeometry.d.ts" />
+    <Content Include="src\geometries\ShapeGeometry.js" />
+    <Content Include="src\geometries\SphereGeometry.d.ts" />
+    <Content Include="src\geometries\SphereGeometry.js" />
+    <Content Include="src\geometries\TetrahedronGeometry.d.ts" />
+    <Content Include="src\geometries\TetrahedronGeometry.js" />
+    <Content Include="src\geometries\TextGeometry.d.ts" />
+    <Content Include="src\geometries\TextGeometry.js" />
+    <Content Include="src\geometries\TorusGeometry.d.ts" />
+    <Content Include="src\geometries\TorusGeometry.js" />
+    <Content Include="src\geometries\TorusKnotGeometry.d.ts" />
+    <Content Include="src\geometries\TorusKnotGeometry.js" />
+    <Content Include="src\geometries\TubeGeometry.d.ts" />
+    <Content Include="src\geometries\TubeGeometry.js" />
+    <Content Include="src\geometries\WireframeGeometry.d.ts" />
+    <Content Include="src\geometries\WireframeGeometry.js" />
+    <Content Include="src\helpers\ArrowHelper.d.ts" />
+    <Content Include="src\helpers\ArrowHelper.js" />
+    <Content Include="src\helpers\AxesHelper.d.ts" />
+    <Content Include="src\helpers\AxesHelper.js" />
+    <Content Include="src\helpers\Box3Helper.d.ts" />
+    <Content Include="src\helpers\Box3Helper.js" />
+    <Content Include="src\helpers\BoxHelper.d.ts" />
+    <Content Include="src\helpers\BoxHelper.js" />
+    <Content Include="src\helpers\CameraHelper.d.ts" />
+    <Content Include="src\helpers\CameraHelper.js" />
+    <Content Include="src\helpers\DirectionalLightHelper.d.ts" />
+    <Content Include="src\helpers\DirectionalLightHelper.js" />
+    <Content Include="src\helpers\FaceNormalsHelper.d.ts" />
+    <Content Include="src\helpers\FaceNormalsHelper.js" />
+    <Content Include="src\helpers\GridHelper.d.ts" />
+    <Content Include="src\helpers\GridHelper.js" />
+    <Content Include="src\helpers\HemisphereLightHelper.d.ts" />
+    <Content Include="src\helpers\HemisphereLightHelper.js" />
+    <Content Include="src\helpers\PlaneHelper.d.ts" />
+    <Content Include="src\helpers\PlaneHelper.js" />
+    <Content Include="src\helpers\PointLightHelper.d.ts" />
+    <Content Include="src\helpers\PointLightHelper.js" />
+    <Content Include="src\helpers\PolarGridHelper.d.ts" />
+    <Content Include="src\helpers\PolarGridHelper.js" />
+    <Content Include="src\helpers\RectAreaLightHelper.d.ts" />
+    <Content Include="src\helpers\RectAreaLightHelper.js" />
+    <Content Include="src\helpers\SkeletonHelper.d.ts" />
+    <Content Include="src\helpers\SkeletonHelper.js" />
+    <Content Include="src\helpers\SpotLightHelper.d.ts" />
+    <Content Include="src\helpers\SpotLightHelper.js" />
+    <Content Include="src\helpers\VertexNormalsHelper.d.ts" />
+    <Content Include="src\helpers\VertexNormalsHelper.js" />
+    <Content Include="src\lights\AmbientLight.d.ts" />
+    <Content Include="src\lights\AmbientLight.js" />
+    <Content Include="src\lights\DirectionalLight.d.ts" />
+    <Content Include="src\lights\DirectionalLight.js" />
+    <Content Include="src\lights\DirectionalLightShadow.d.ts" />
+    <Content Include="src\lights\DirectionalLightShadow.js" />
+    <Content Include="src\lights\HemisphereLight.d.ts" />
+    <Content Include="src\lights\HemisphereLight.js" />
+    <Content Include="src\lights\Light.d.ts" />
+    <Content Include="src\lights\Light.js" />
+    <Content Include="src\lights\LightShadow.d.ts" />
+    <Content Include="src\lights\LightShadow.js" />
+    <Content Include="src\lights\PointLight.d.ts" />
+    <Content Include="src\lights\PointLight.js" />
+    <Content Include="src\lights\RectAreaLight.d.ts" />
+    <Content Include="src\lights\RectAreaLight.js" />
+    <Content Include="src\lights\SpotLight.d.ts" />
+    <Content Include="src\lights\SpotLight.js" />
+    <Content Include="src\lights\SpotLightShadow.d.ts" />
+    <Content Include="src\lights\SpotLightShadow.js" />
+    <Content Include="src\loaders\AnimationLoader.d.ts" />
+    <Content Include="src\loaders\AnimationLoader.js" />
+    <Content Include="src\loaders\AudioLoader.d.ts" />
+    <Content Include="src\loaders\AudioLoader.js" />
+    <Content Include="src\loaders\BufferGeometryLoader.d.ts" />
+    <Content Include="src\loaders\BufferGeometryLoader.js" />
+    <Content Include="src\loaders\Cache.d.ts" />
+    <Content Include="src\loaders\Cache.js" />
+    <Content Include="src\loaders\CompressedTextureLoader.d.ts" />
+    <Content Include="src\loaders\CompressedTextureLoader.js" />
+    <Content Include="src\loaders\CubeTextureLoader.d.ts" />
+    <Content Include="src\loaders\CubeTextureLoader.js" />
+    <Content Include="src\loaders\DataTextureLoader.d.ts" />
+    <Content Include="src\loaders\DataTextureLoader.js" />
+    <Content Include="src\loaders\FileLoader.d.ts" />
+    <Content Include="src\loaders\FileLoader.js" />
+    <Content Include="src\loaders\FontLoader.d.ts" />
+    <Content Include="src\loaders\FontLoader.js" />
+    <Content Include="src\loaders\ImageBitmapLoader.d.ts" />
+    <Content Include="src\loaders\ImageBitmapLoader.js" />
+    <Content Include="src\loaders\ImageLoader.d.ts" />
+    <Content Include="src\loaders\ImageLoader.js" />
+    <Content Include="src\loaders\Loader.d.ts" />
+    <Content Include="src\loaders\Loader.js" />
+    <Content Include="src\loaders\LoaderUtils.d.ts" />
+    <Content Include="src\loaders\LoaderUtils.js" />
+    <Content Include="src\loaders\LoadingManager.d.ts" />
+    <Content Include="src\loaders\LoadingManager.js" />
+    <Content Include="src\loaders\MaterialLoader.d.ts" />
+    <Content Include="src\loaders\MaterialLoader.js" />
+    <Content Include="src\loaders\ObjectLoader.d.ts" />
+    <Content Include="src\loaders\ObjectLoader.js" />
+    <Content Include="src\loaders\TextureLoader.d.ts" />
+    <Content Include="src\loaders\TextureLoader.js" />
+    <Content Include="src\materials\LineBasicMaterial.d.ts" />
+    <Content Include="src\materials\LineBasicMaterial.js" />
+    <Content Include="src\materials\LineDashedMaterial.d.ts" />
+    <Content Include="src\materials\LineDashedMaterial.js" />
+    <Content Include="src\materials\Material.d.ts" />
+    <Content Include="src\materials\Material.js" />
+    <Content Include="src\materials\Materials.d.ts" />
+    <Content Include="src\materials\Materials.js" />
+    <Content Include="src\materials\MeshBasicMaterial.d.ts" />
+    <Content Include="src\materials\MeshBasicMaterial.js" />
+    <Content Include="src\materials\MeshDepthMaterial.d.ts" />
+    <Content Include="src\materials\MeshDepthMaterial.js" />
+    <Content Include="src\materials\MeshDistanceMaterial.js" />
+    <Content Include="src\materials\MeshLambertMaterial.d.ts" />
+    <Content Include="src\materials\MeshLambertMaterial.js" />
+    <Content Include="src\materials\MeshMatcapMaterial.js" />
+    <Content Include="src\materials\MeshNormalMaterial.d.ts" />
+    <Content Include="src\materials\MeshNormalMaterial.js" />
+    <Content Include="src\materials\MeshPhongMaterial.d.ts" />
+    <Content Include="src\materials\MeshPhongMaterial.js" />
+    <Content Include="src\materials\MeshPhysicalMaterial.d.ts" />
+    <Content Include="src\materials\MeshPhysicalMaterial.js" />
+    <Content Include="src\materials\MeshStandardMaterial.d.ts" />
+    <Content Include="src\materials\MeshStandardMaterial.js" />
+    <Content Include="src\materials\MeshToonMaterial.js" />
+    <Content Include="src\materials\PointsMaterial.d.ts" />
+    <Content Include="src\materials\PointsMaterial.js" />
+    <Content Include="src\materials\RawShaderMaterial.d.ts" />
+    <Content Include="src\materials\RawShaderMaterial.js" />
+    <Content Include="src\materials\ShaderMaterial.d.ts" />
+    <Content Include="src\materials\ShaderMaterial.js" />
+    <Content Include="src\materials\ShadowMaterial.d.ts" />
+    <Content Include="src\materials\ShadowMaterial.js" />
+    <Content Include="src\materials\SpriteMaterial.d.ts" />
+    <Content Include="src\materials\SpriteMaterial.js" />
+    <Content Include="src\math\Box2.d.ts" />
+    <Content Include="src\math\Box2.js" />
+    <Content Include="src\math\Box3.d.ts" />
+    <Content Include="src\math\Box3.js" />
+    <Content Include="src\math\Color.d.ts" />
+    <Content Include="src\math\Color.js" />
+    <Content Include="src\math\Cylindrical.d.ts" />
+    <Content Include="src\math\Cylindrical.js" />
+    <Content Include="src\math\Euler.d.ts" />
+    <Content Include="src\math\Euler.js" />
+    <Content Include="src\math\Frustum.d.ts" />
+    <Content Include="src\math\Frustum.js" />
+    <Content Include="src\math\Interpolant.d.ts" />
+    <Content Include="src\math\Interpolant.js" />
+    <Content Include="src\math\interpolants\CubicInterpolant.d.ts" />
+    <Content Include="src\math\interpolants\CubicInterpolant.js" />
+    <Content Include="src\math\interpolants\DiscreteInterpolant.d.ts" />
+    <Content Include="src\math\interpolants\DiscreteInterpolant.js" />
+    <Content Include="src\math\interpolants\LinearInterpolant.d.ts" />
+    <Content Include="src\math\interpolants\LinearInterpolant.js" />
+    <Content Include="src\math\interpolants\QuaternionLinearInterpolant.d.ts" />
+    <Content Include="src\math\interpolants\QuaternionLinearInterpolant.js" />
+    <Content Include="src\math\Line3.d.ts" />
+    <Content Include="src\math\Line3.js" />
+    <Content Include="src\math\Math.d.ts" />
+    <Content Include="src\math\Math.js" />
+    <Content Include="src\math\Matrix3.d.ts" />
+    <Content Include="src\math\Matrix3.js" />
+    <Content Include="src\math\Matrix4.d.ts" />
+    <Content Include="src\math\Matrix4.js" />
+    <Content Include="src\math\Plane.d.ts" />
+    <Content Include="src\math\Plane.js" />
+    <Content Include="src\math\Quaternion.d.ts" />
+    <Content Include="src\math\Quaternion.js" />
+    <Content Include="src\math\Ray.d.ts" />
+    <Content Include="src\math\Ray.js" />
+    <Content Include="src\math\Sphere.d.ts" />
+    <Content Include="src\math\Sphere.js" />
+    <Content Include="src\math\Spherical.d.ts" />
+    <Content Include="src\math\Spherical.js" />
+    <Content Include="src\math\Triangle.d.ts" />
+    <Content Include="src\math\Triangle.js" />
+    <Content Include="src\math\Vector2.d.ts" />
+    <Content Include="src\math\Vector2.js" />
+    <Content Include="src\math\Vector3.d.ts" />
+    <Content Include="src\math\Vector3.js" />
+    <Content Include="src\math\Vector4.d.ts" />
+    <Content Include="src\math\Vector4.js" />
+    <Content Include="src\objects\Bone.d.ts" />
+    <Content Include="src\objects\Bone.js" />
+    <Content Include="src\objects\Group.d.ts" />
+    <Content Include="src\objects\Group.js" />
+    <Content Include="src\objects\Line.d.ts" />
+    <Content Include="src\objects\Line.js" />
+    <Content Include="src\objects\LineLoop.d.ts" />
+    <Content Include="src\objects\LineLoop.js" />
+    <Content Include="src\objects\LineSegments.d.ts" />
+    <Content Include="src\objects\LineSegments.js" />
+    <Content Include="src\objects\LOD.d.ts" />
+    <Content Include="src\objects\LOD.js" />
+    <Content Include="src\objects\Mesh.d.ts" />
+    <Content Include="src\objects\Mesh.js" />
+    <Content Include="src\objects\Points.d.ts" />
+    <Content Include="src\objects\Points.js" />
+    <Content Include="src\objects\Skeleton.d.ts" />
+    <Content Include="src\objects\Skeleton.js" />
+    <Content Include="src\objects\SkinnedMesh.d.ts" />
+    <Content Include="src\objects\SkinnedMesh.js" />
+    <Content Include="src\objects\Sprite.d.ts" />
+    <Content Include="src\objects\Sprite.js" />
+    <Content Include="src\polyfills.d.ts" />
+    <Content Include="src\polyfills.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk.d.ts" />
+    <Content Include="src\renderers\shaders\ShaderChunk.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\alphamap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\alphamap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\alphatest_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\aomap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\aomap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\beginnormal_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\begin_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\bsdfs.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\bumpmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\clipping_planes_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\clipping_planes_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\clipping_planes_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\clipping_planes_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\color_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\color_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\color_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\color_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\common.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\cube_uv_reflection_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\defaultnormal_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\displacementmap_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\displacementmap_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\dithering_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\dithering_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\emissivemap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\emissivemap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\encodings_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\encodings_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\envmap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\envmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\envmap_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\envmap_physical_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\envmap_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\fog_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\fog_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\fog_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\fog_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\gradientmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lightmap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lightmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_fragment_begin.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_fragment_end.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_fragment_maps.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_lambert_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_pars_begin.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_phong_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_phong_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_physical_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\lights_physical_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\logdepthbuf_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\logdepthbuf_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\logdepthbuf_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\logdepthbuf_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\map_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\map_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\map_particle_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\map_particle_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\metalnessmap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\metalnessmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\morphnormal_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\morphtarget_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\morphtarget_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\normalmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\packing.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\premultiplied_alpha_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\project_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\roughnessmap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\roughnessmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\shadowmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\shadowmap_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\shadowmap_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\shadowmask_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\skinbase_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\skinning_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\skinning_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\skinnormal_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\specularmap_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\specularmap_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\tonemapping_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\tonemapping_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv2_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv2_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv2_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv_pars_fragment.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv_pars_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\uv_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderChunk\worldpos_vertex.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib.d.ts" />
+    <Content Include="src\renderers\shaders\ShaderLib.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\background_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\background_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\cube_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\cube_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\depth_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\depth_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\distanceRGBA_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\distanceRGBA_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\equirect_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\equirect_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\linedashed_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\linedashed_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshbasic_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshbasic_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshlambert_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshlambert_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshmatcap_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshmatcap_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshphong_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshphong_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshphysical_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\meshphysical_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\normal_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\normal_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\points_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\points_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\shadow_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\shadow_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\sprite_frag.glsl.js" />
+    <Content Include="src\renderers\shaders\ShaderLib\sprite_vert.glsl.js" />
+    <Content Include="src\renderers\shaders\UniformsLib.d.ts" />
+    <Content Include="src\renderers\shaders\UniformsLib.js" />
+    <Content Include="src\renderers\shaders\UniformsUtils.d.ts" />
+    <Content Include="src\renderers\shaders\UniformsUtils.js" />
+    <Content Include="src\renderers\WebGL2Renderer.js" />
+    <Content Include="src\renderers\WebGLMultisampleRenderTarget.d.ts" />
+    <Content Include="src\renderers\WebGLMultisampleRenderTarget.js" />
+    <Content Include="src\renderers\WebGLRenderer.d.ts" />
+    <Content Include="src\renderers\WebGLRenderer.js" />
+    <Content Include="src\renderers\WebGLRenderTarget.d.ts" />
+    <Content Include="src\renderers\WebGLRenderTarget.js" />
+    <Content Include="src\renderers\WebGLRenderTargetCube.d.ts" />
+    <Content Include="src\renderers\WebGLRenderTargetCube.js" />
+    <Content Include="src\renderers\webgl\WebGLAnimation.js" />
+    <Content Include="src\renderers\webgl\WebGLAttributes.js" />
+    <Content Include="src\renderers\webgl\WebGLBackground.js" />
+    <Content Include="src\renderers\webgl\WebGLBufferRenderer.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLBufferRenderer.js" />
+    <Content Include="src\renderers\webgl\WebGLCapabilities.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLCapabilities.js" />
+    <Content Include="src\renderers\webgl\WebGLClipping.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLClipping.js" />
+    <Content Include="src\renderers\webgl\WebGLExtensions.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLExtensions.js" />
+    <Content Include="src\renderers\webgl\WebGLGeometries.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLGeometries.js" />
+    <Content Include="src\renderers\webgl\WebGLIndexedBufferRenderer.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLIndexedBufferRenderer.js" />
+    <Content Include="src\renderers\webgl\WebGLInfo.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLInfo.js" />
+    <Content Include="src\renderers\webgl\WebGLLights.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLLights.js" />
+    <Content Include="src\renderers\webgl\WebGLMorphtargets.js" />
+    <Content Include="src\renderers\webgl\WebGLObjects.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLObjects.js" />
+    <Content Include="src\renderers\webgl\WebGLProgram.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLProgram.js" />
+    <Content Include="src\renderers\webgl\WebGLPrograms.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLPrograms.js" />
+    <Content Include="src\renderers\webgl\WebGLProperties.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLProperties.js" />
+    <Content Include="src\renderers\webgl\WebGLRenderLists.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLRenderLists.js" />
+    <Content Include="src\renderers\webgl\WebGLRenderStates.js" />
+    <Content Include="src\renderers\webgl\WebGLShader.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLShader.js" />
+    <Content Include="src\renderers\webgl\WebGLShadowMap.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLShadowMap.js" />
+    <Content Include="src\renderers\webgl\WebGLState.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLState.js" />
+    <Content Include="src\renderers\webgl\WebGLTextures.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLTextures.js" />
+    <Content Include="src\renderers\webgl\WebGLUniforms.d.ts" />
+    <Content Include="src\renderers\webgl\WebGLUniforms.js" />
+    <Content Include="src\renderers\webgl\WebGLUtils.js" />
+    <Content Include="src\renderers\webvr\WebVRManager.d.ts" />
+    <Content Include="src\renderers\webvr\WebVRManager.js" />
+    <Content Include="src\renderers\webvr\WebVRUtils.js" />
+    <Content Include="src\renderers\webvr\WebXRManager.js" />
+    <Content Include="src\scenes\Fog.d.ts" />
+    <Content Include="src\scenes\Fog.js" />
+    <Content Include="src\scenes\FogExp2.d.ts" />
+    <Content Include="src\scenes\FogExp2.js" />
+    <Content Include="src\scenes\Scene.d.ts" />
+    <Content Include="src\scenes\Scene.js" />
+    <Content Include="src\textures\CanvasTexture.d.ts" />
+    <Content Include="src\textures\CanvasTexture.js" />
+    <Content Include="src\textures\CompressedTexture.d.ts" />
+    <Content Include="src\textures\CompressedTexture.js" />
+    <Content Include="src\textures\CubeTexture.d.ts" />
+    <Content Include="src\textures\CubeTexture.js" />
+    <Content Include="src\textures\DataTexture.d.ts" />
+    <Content Include="src\textures\DataTexture.js" />
+    <Content Include="src\textures\DataTexture3D.d.ts" />
+    <Content Include="src\textures\DataTexture3D.js" />
+    <Content Include="src\textures\DepthTexture.d.ts" />
+    <Content Include="src\textures\DepthTexture.js" />
+    <Content Include="src\textures\Texture.d.ts" />
+    <Content Include="src\textures\Texture.js" />
+    <Content Include="src\textures\VideoTexture.d.ts" />
+    <Content Include="src\textures\VideoTexture.js" />
+    <Content Include="src\Three.d.ts" />
+    <Content Include="src\Three.js" />
+    <Content Include="src\Three.Legacy.d.ts" />
+    <Content Include="src\Three.Legacy.js" />
+    <Content Include="src\utils.js" />
+    <None Include="Computergrafic_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
