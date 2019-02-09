@@ -29,8 +29,13 @@ function init() {
     // world
     create_table(0, 0, 0);
     // create_dice_set(0, 10, 0);
-    load_dice_set();
-    load_dragon_statue();
+    // load_dice_set(15,5,15);
+    load_dragon_statue(0, 22.8, 0);
+
+    load_archer(-20, 0, 30);
+    load_bard(10, 0, 10);
+    load_barbarian(-15, 0, 10);
+    load_croc(20, 0, -25)
 
     // lights
     var light = new THREE.DirectionalLight(0xffffff, 1);
@@ -183,12 +188,13 @@ function create_dice_set(x_koord, y_koord, z_koord) {
 
 // Done by: Mathieu Vaillancourt 
 // Avaiable under: https://sketchfab.com/models/42e434900ee84225b576415d4d856bed
-function load_dice_set() {
+function load_dice_set(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
     loader.load('gltf/rpg dice set/scene.gltf', function (gltf) {
-
-        scene.add(gltf.scene);
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        scene.add(mesh);
 
         gltf.animations; // Array<THREE.AnimationClip>
         gltf.scene; // THREE.Scene
@@ -201,12 +207,102 @@ function load_dice_set() {
 
 // Done by: Ashraf Bouhadida 
 // Avaiable under: https://sketchfab.com/models/8d6c9e00b6234ae48a9ba8373d1a8b8f
-function load_dragon_statue() {
+function load_dragon_statue(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
     loader.load('gltf/dragon_decimated/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        mesh.scale.set(3, 3, 3);
+        scene.add(mesh);
 
-        scene.add(gltf.scene);
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+
+// Done by: Fed Tabula
+// Avaiable under: https://sketchfab.com/models/8637ae16b7384a3f9e72f0ebaa01fc65
+function load_barbarian(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+loader.load('gltf/barbarian/scene.gltf', function (gltf) {
+    var mesh = gltf.scene;
+    mesh.position.set(x_koord, y_koord, z_koord);
+    mesh.rotation.y = THREE.Math.degToRad(135);
+    var scaling = 0.25;
+    mesh.scale.set(scaling, scaling, scaling);
+    scene.add(mesh);
+
+    gltf.animations; // Array<THREE.AnimationClip>
+    gltf.scene; // THREE.Scene
+    gltf.scenes; // Array<THREE.Scene>
+    gltf.cameras; // Array<THREE.Camera>
+    gltf.asset; // Object
+
+});
+}
+
+// Done by: Hunter Black 
+// Avaiable under: https://sketchfab.com/models/0edb7e0bd2b94cf883fc082730c8c32d
+function load_bard(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/bard/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        mesh.rotation.y = THREE.Math.degToRad(180);
+        mesh.scale.set(4, 4, 4);
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+// Done by: jakatoa 
+// Avaiable under: https://sketchfab.com/models/8cf2507731a04e1cb74c01a1b5e094d1
+function load_archer(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/elven_archer/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        mesh.rotation.x = THREE.Math.degToRad(5.5);
+        mesh.rotation.y = THREE.Math.degToRad(-90);
+        mesh.rotation.z = THREE.Math.degToRad(1);
+        mesh.scale.set(0.4, 0.4, 0.4);
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+// Done by: Lanz 
+// Avaiable under: https://sketchfab.com/models/14e1fc333ae94c299d6e42df1b239eab
+function load_croc(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/captain_croc/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        var scaling = 0.25;
+        mesh.scale.set(scaling, scaling, scaling);
+        scene.add(mesh);
 
         gltf.animations; // Array<THREE.AnimationClip>
         gltf.scene; // THREE.Scene
