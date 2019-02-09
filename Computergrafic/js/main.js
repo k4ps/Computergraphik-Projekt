@@ -29,7 +29,7 @@ function init() {
     create_table(0, 0, 0);
 
     // lights
-    var light = new THREE.DirectionalLight();
+    var light = new THREE.DirectionalLight(0xffffff, 1);
     scene.add(light)
      
     var light = new THREE.AmbientLight(0x404040); // soft white light
@@ -61,8 +61,15 @@ function create_table(x_koord, y_koord, z_koord) {
 
 
     // Materialien fuer den tisch
-    var holz = new THREE.MeshLambertMaterial({ color: new THREE.Color("rgb(24, 16, 9)")});
-    var filz = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+    var texture_holz = new THREE.TextureLoader().load('images/holz.jpg');
+    texture_holz.wrapS = texture_holz.wrapT = THREE.MirroredRepeatWrapping;
+    texture_holz.repeat.set(2, 2)
+    var holz = new THREE.MeshLambertMaterial({ map: texture_holz });
+
+    var texture = new THREE.TextureLoader().load('image/filz.jpg');
+    // texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    //texture.repeat.set(2, 2)
+    var filz = new THREE.MeshLambertMaterial({ map: texture });
 
     // Tischplatte erstellen
     var geometry = new THREE.BoxGeometry(tischbreite, tischhoehe, tischlaenge);   
@@ -91,7 +98,7 @@ function create_table(x_koord, y_koord, z_koord) {
 
     // Die kurzen Kanten erstellen
     // vorne
-    var geometry = new THREE.BoxGeometry(tischbreite, kantenhoehe, kantenbreite);
+    var geometry = new THREE.BoxGeometry(tischbreite - 2* kantenbreite , kantenhoehe, kantenbreite);
     var mesh = new THREE.Mesh(geometry, holz);
     mesh.position.set(x_koord, oberflaeche, z_koord + tischlaenge / 2 - kantenbreite / 2);
     scene.add(mesh);
