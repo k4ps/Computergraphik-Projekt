@@ -31,6 +31,7 @@ function init() {
     // create_dice_set(0, 10, 0);
     // load_dice_set(15,5,15);
     load_dragon_statue(0, 22.8, 0);
+    load_bowser_dice_tower(38, 5, -80);
 
     load_archer(-20, 0, 30);
     load_bard(10, 0, 10);
@@ -185,9 +186,32 @@ function create_dice_set(x_koord, y_koord, z_koord) {
     scene.add(mesh);
 }
 
+// Importet 3D Models below
 
-// Done by: Mathieu Vaillancourt 
-// Avaiable under: https://sketchfab.com/models/42e434900ee84225b576415d4d856bed
+// Done by:                   Toxicsquall 
+// Avaiable under:      https://sketchfab.com/models/7be72f58eb1c43cb8450442a17a98970
+function load_bowser_dice_tower(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/bowsers_castle_dice_tower/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        mesh.rotation.x = THREE.Math.degToRad(-95);
+        var scaling = 0.125;
+        mesh.scale.set(scaling, scaling, scaling);
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+// Done by:                   Mathieu Vaillancourt 
+// Avaiable under:      https://sketchfab.com/models/42e434900ee84225b576415d4d856bed
 function load_dice_set(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
@@ -205,8 +229,8 @@ function load_dice_set(x_koord, y_koord, z_koord) {
     });
 }
 
-// Done by: Ashraf Bouhadida 
-// Avaiable under: https://sketchfab.com/models/8d6c9e00b6234ae48a9ba8373d1a8b8f
+// Done by:                   Ashraf Bouhadida 
+// Avaiable under:      https://sketchfab.com/models/8d6c9e00b6234ae48a9ba8373d1a8b8f
 function load_dragon_statue(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
@@ -226,8 +250,8 @@ function load_dragon_statue(x_koord, y_koord, z_koord) {
 }
 
 
-// Done by: Fed Tabula
-// Avaiable under: https://sketchfab.com/models/8637ae16b7384a3f9e72f0ebaa01fc65
+// Done by:                   Fed Tabula
+// Avaiable under:      https://sketchfab.com/models/8637ae16b7384a3f9e72f0ebaa01fc65
 function load_barbarian(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
@@ -248,8 +272,8 @@ loader.load('gltf/barbarian/scene.gltf', function (gltf) {
 });
 }
 
-// Done by: Hunter Black 
-// Avaiable under: https://sketchfab.com/models/0edb7e0bd2b94cf883fc082730c8c32d
+// Done by:                   Hunter Black 
+// Avaiable under:      https://sketchfab.com/models/0edb7e0bd2b94cf883fc082730c8c32d
 function load_bard(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
@@ -269,8 +293,8 @@ function load_bard(x_koord, y_koord, z_koord) {
     });
 }
 
-// Done by: jakatoa 
-// Avaiable under: https://sketchfab.com/models/8cf2507731a04e1cb74c01a1b5e094d1
+// Done by:                   jakatoa 
+// Avaiable under:      https://sketchfab.com/models/8cf2507731a04e1cb74c01a1b5e094d1
 function load_archer(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
@@ -292,8 +316,8 @@ function load_archer(x_koord, y_koord, z_koord) {
     });
 }
 
-// Done by: Lanz 
-// Avaiable under: https://sketchfab.com/models/14e1fc333ae94c299d6e42df1b239eab
+// Done by:                   Lanz 
+// Avaiable under:      https://sketchfab.com/models/14e1fc333ae94c299d6e42df1b239eab
 function load_croc(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
