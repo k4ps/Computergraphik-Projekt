@@ -27,6 +27,7 @@ function init() {
 
 
     // world
+
     create_table(0, 0, 0);
     // create_dice_set(0, 10, 0);
     // load_dice_set(15,5,15);
@@ -37,6 +38,9 @@ function init() {
     load_bard(10, 0, 10);
     load_barbarian(-15, 0, 10);
     load_croc(20, 0, -25)
+
+    load_dice_set_2(38, 0, -10);
+    load_dice_set_3(-38, -4.2, -10);
 
     // lights
     var light = new THREE.DirectionalLight(0xffffff, 1);
@@ -212,12 +216,56 @@ function load_bowser_dice_tower(x_koord, y_koord, z_koord) {
 
 // Done by:                   Mathieu Vaillancourt 
 // Avaiable under:      https://sketchfab.com/models/42e434900ee84225b576415d4d856bed
-function load_dice_set(x_koord, y_koord, z_koord) {
+function load_dice_set_1(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 
     loader.load('gltf/rpg dice set/scene.gltf', function (gltf) {
         var mesh = gltf.scene;
         mesh.position.set(x_koord, y_koord, z_koord);
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+// Done by:                   JayDesigns3D 
+// Avaiable under:      https://sketchfab.com/models/163950cff9694fe1a686d22fe7737236
+function load_dice_set_2(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/dungeons_and_dragons_dice_set/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        var scaling = 1.5;
+        mesh.scale.set(scaling, scaling, scaling);
+        scene.add(mesh);
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
+}
+
+// Done by:                   Johannes Rasinkangas
+// Avaiable under:      https://sketchfab.com/models/201c53411876498ea62394adcb5ba5e9
+function load_dice_set_3(x_koord, y_koord, z_koord) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/dice_set/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        var scaling = 2;
+        mesh.scale.set(scaling, scaling, scaling);
+        scene.add(mesh);
         scene.add(mesh);
 
         gltf.animations; // Array<THREE.AnimationClip>
