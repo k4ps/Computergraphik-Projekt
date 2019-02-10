@@ -1,4 +1,4 @@
-﻿function illuminate() {
+function illuminate() {
     var light = new THREE.AmbientLight(0x404040); // soft white light
     scene.add(light);
 
@@ -14,13 +14,13 @@
 }
 
 function createLight(color) {
-    var newObj = new THREE.PointLight(color, 1.5, 1000);
+    var newObj = new THREE.PointLight(color, 1.5, 1000, 2);
     newObj.castShadow = true;
     newObj.shadow.camera.near = 1;
-    newObj.shadow.camera.far = 600;
-    newObj.shadow.bias = - 0.005;
-    newObj.shadow.mapSize.width = 1024;
-    newObj.shadow.mapSize.height = 1024;
+    newObj.shadow.camera.far = 800;
+    newObj.shadow.bias = -0.00001;
+    newObj.shadow.mapSize.width = 2048;
+    newObj.shadow.mapSize.height = 2048;
     var geometry = new THREE.SphereBufferGeometry(0.3, 12, 6);
     var material = new THREE.MeshBasicMaterial({ color: color });
     material.color.multiplyScalar(1.5);
