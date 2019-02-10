@@ -6,27 +6,27 @@ function create_tabletop_table(x_koord, y_koord, z_koord) {
     // create_dice_set(0, 10, 0);
     // load_dice_set(15,5,15);
     load_dragon_statue(x_koord + 0, y_koord + 22.8, z_koord + 0);
-    load_bowser_dice_tower(x_koord + 38, y_koord + 5, z_koord - 80);
+    load_bowser_dice_tower(x_koord + 33, y_koord + 0, z_koord - 75);
 
     load_archer(x_koord - 20, y_koord + 0, z_koord + 30);
     load_bard(x_koord + 10, y_koord + 0, z_koord + 10);
     load_barbarian(x_koord - 15, y_koord + 0, z_koord + 10);
     load_croc(x_koord + 20, y_koord + 0, z_koord - 25)
     
-    load_dice_set_3(x_koord - 38, y_koord - 4.2 , z_koord - 10, 0, 'white');
+    load_dice_set_3(x_koord - 38, y_koord - 4 , z_koord - 10, 0, 'white');
     create_character_sheet(x_koord - 30, y_koord + 0.2, z_koord - 10, -90, 0, 0, 'images/cs-sven.png');
 
     load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
     create_character_sheet(x_koord + 30, y_koord + 0.2, z_koord - 10, -90, 0, 180, 'images/cs-2.png');
 
-    load_dice_set_3(x_koord - 33, y_koord - 4.2, z_koord + 57, 90, 'blue');
+    load_dice_set_3(x_koord - 33, y_koord - 4, z_koord + 57, 90, 'blue');
     create_character_sheet(x_koord - 25, y_koord + 0.2, z_koord + 70, -90, 0, -90, 'images/cs-3.png');
 
-    load_dice_set_3(x_koord + 34, y_koord - 4.2, z_koord + 72, 180, 'yellow');
+    load_dice_set_3(x_koord + 34, y_koord - 4, z_koord + 72, 180, 'yellow');
     create_character_sheet(x_koord + 26, y_koord + 0.2, z_koord + 83, -90, 0, 90, 'images/cs-4.png');
 
 
-    load_dice_set_3(x_koord + 20, y_koord - 4.2, z_koord - 88, 180, 'black');
+    load_dice_set_3(x_koord + 20, y_koord - 4, z_koord - 88, 180, 'black');
     create_gm_screen(x_koord + 25, y_koord + 15, z_koord - 80, 270);
     create_playbook(x_koord - 45, y_koord + 7.8, z_koord - 100);
 }
@@ -365,8 +365,9 @@ function load_bowser_dice_tower(x_koord, y_koord, z_koord) {
     loader.load('gltf/bowsers_castle_dice_tower/scene.gltf', function (gltf) {
         var mesh = gltf.scene;
         mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.rotation.x = THREE.Math.degToRad(-95);
-        var scaling = 0.125;
+        mesh.rotation.x = THREE.Math.degToRad(0);
+        mesh.rotation.y = THREE.Math.degToRad(-30);
+        var scaling = 100;
         mesh.scale.set(scaling, scaling, scaling);
         mesh.castShadow = true;
         mesh.receiveShadow = true;
