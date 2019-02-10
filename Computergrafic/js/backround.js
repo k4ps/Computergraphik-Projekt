@@ -20,7 +20,11 @@
 
     // Lade Delfine Dining Chair von Zuo Modern
     // URL: https://sketchfab.com/models/d4ed4564eaf040ec99c3de008b60f6a2
-    load_gltf(-50, -40, 60, 180, 0, 90, 0, 'chair');
+    load_gltf(-50, -58, 110, 1000, 0, -38, 0, 'chair');
+    load_gltf(-50, -58, 20, 1000, 0, -38, 0, 'chair');
+    load_gltf(-50, -58, -100, 1000, 0, -128, 0, 'chair');
+    load_gltf(50, -58, 10, 1000, 0, -218, 0, 'chair');
+    load_gltf(50, -58, -80, 1000, 0, -218, 0, 'chair');
 }
 
 function create_backround() {
