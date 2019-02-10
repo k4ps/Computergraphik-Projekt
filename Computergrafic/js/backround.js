@@ -1,52 +1,70 @@
-﻿function create_backround() {
+﻿function create_surroundings() {
+    create_backround();
 
+    create_teppich();
+
+    create_bookshelf();
+
+    create_door();
+
+    // Inner-Sea-World-Map: http://3.bp.blogspot.com/-taxbcU3l9eU/VBnCkb_1J5I/AAAAAAAAO04/BAAw5urvqR8/w1200-h630-p-nu/map_inner_sea_large.png
+    create_poster(200, 120, 0, 100, -299.9, 0, 0, 0, 'map_inner_sea_large.png');
+
+    // Lade Couch, von vegu
+    // URL: https://sketchfab.com/models/78932b7ffef240379e83320660322fcd
+    load_gltf(20, -15, 250, 100, 0, 180, 0, 'couch');
+
+    // Lade Lampe von
+    // URL:
+    load_gltf(-150, 40, 250, 100, 0, 0, 0, 'floor_lamp');
+}
+
+function create_backround() {
+    var loader = new THREE.TextureLoader();
     var size = 600;
-    var geometry = new THREE.BoxBufferGeometry(size, size*0.4, size);
-    var texture = new THREE.TextureLoader().load('images/holzraum.jpg');
+    var geometry = new THREE.BoxBufferGeometry(size, size * 0.4, size); 
+
+    // Load Textures for background
+    // Quelle:      
+    var texture = loader.load('images/holzraum.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    texture.repeat.set(2, 3);
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide});
-    var mesh = new THREE.Mesh(geometry, material);
+    texture.repeat.set(3, 2);
+    texture.anisotropy = 8;
+    var floor = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide});
+
+    // Quelle:      https://c1.staticflickr.com/9/8244/8590273977_dab3ccd0bf_b.jpg
+    var texture = loader.load('images/wall.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(2, 1);
+    texture.anisotropy = 8;
+    var wall = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide });
+
+    // Quelle:      http://hires.patternpictures.com/PP17272013-Subtle-Plaster-Texture-White-Wall.jpg
+    var texture = loader.load('images/decke.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(2, 2);
+    texture.anisotropy = 8;
+    var ceiling = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide });
+
+    const materials = [wall, wall, ceiling, floor, wall, wall];
+
+    var mesh = new THREE.Mesh(geometry, materials);
     mesh.position.y = 60;
     mesh.receiveShadow = true;
     scene.add(mesh);
 
-    load_lamp(100, 40, -175);
-    create_teppich();
-
-}
-
-function load_lamp(x_koord, y_koord, z_koord) {
-
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/floor_lamp/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        //mesh.rotation.x = THREE.Math.degToRad(-95);
-        var scaling = 100;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
+    
 }
 
 // Lade Teppich Textur
 // Quelle: https://i.pinimg.com/originals/30/a6/b2/30a6b226bf34a6e4dbf405c24fefadaa.jpg
 function create_teppich() {
     var geometry = new THREE.PlaneGeometry(250, 350);
-    var texture = new THREE.TextureLoader().load('images/teppich3.jpg');
+    var texture = new THREE.TextureLoader().load('images/teppich.jpg');
     texture.wrapS = THREE.MirroredRepeatWrapping;
     texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(10, 10);
+    texture.anisotropy = 8;
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.rotation.x = THREE.Math.degToRad(-90);
@@ -55,3 +73,64 @@ function create_teppich() {
     mesh.receiveShadow = true;
     scene.add(mesh);
 }
+
+// Erstellt THREE.PlaneGeometry und laedt die Textur eines Buecherregales
+// Quelle:      https://www.mrjdesigns.co.uk/media/wysiwyg/wall_of_books.jpg
+function create_bookshelf() {
+    var geometry = new THREE.PlaneGeometry(600, 240);
+    var texture = new THREE.TextureLoader().load('images/bookshelf.jpg');
+    texture.wrapS = THREE.MirroredRepeatWrapping;
+    texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(2, 1);
+    texture.anisotropy = 8;
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var mesh = new THREE.Mesh(geometry, material);
+    //mesh.rotation.x = THREE.Math.degToRad(-90);
+    mesh.rotation.y = THREE.Math.degToRad(90);
+    mesh.position.x = -250;
+    mesh.position.y = 60;
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    scene.add(mesh);
+}
+
+// Erstellt THREE.PlaneGeometry und laedt die Textur einer Tuer
+// Quelle:      http://www.photoshoptextures.com/architectural-textures/white-door-texture.jpg
+function create_door() {
+    var geometry = new THREE.PlaneGeometry(80, 180);
+    var texture = new THREE.TextureLoader().load('images/door.jpg');
+    texture.wrapS = THREE.MirroredRepeatWrapping;
+    texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(1, 1);
+    texture.anisotropy = 8;
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var mesh = new THREE.Mesh(geometry, material);
+    //mesh.rotation.x = THREE.Math.degToRad(-90);
+    mesh.rotation.y = THREE.Math.degToRad(-90);
+    mesh.position.x = 299.8;
+    mesh.position.y = 30;
+    mesh.position.z = 250;
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    scene.add(mesh);
+}
+
+// Erstellt THREE.PlaneGeometry und laedt eine uebergebene Textur
+// benutzte Texturen und Quellen:
+// Inner-Sea-World-Map: http://3.bp.blogspot.com/-taxbcU3l9eU/VBnCkb_1J5I/AAAAAAAAO04/BAAw5urvqR8/w1200-h630-p-nu/map_inner_sea_large.png
+function create_poster(size_w, size_h, pos_x, pos_y, pos_z, rot_x, rot_y, rot_z, path) {
+    var geometry = new THREE.PlaneGeometry(size_w, size_h);
+    var texture = new THREE.TextureLoader().load('images/' + path);
+    texture.wrapS = THREE.MirroredRepeatWrapping;
+    texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(1, 1);
+    texture.anisotropy = 8;
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(pos_x, pos_y, pos_z);
+    mesh.rotation.set(THREE.Math.degToRad(rot_x), THREE.Math.degToRad(rot_y), THREE.Math.degToRad(rot_z));
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    scene.add(mesh);
+}
+

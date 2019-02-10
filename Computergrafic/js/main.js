@@ -15,6 +15,8 @@ function init() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.BasicShadowMap;
     document.body.appendChild(renderer.domElement);
 
     // camera 
@@ -27,15 +29,11 @@ function init() {
 
 
     // world
-    create_backround();
-    create_tabletop_table(0, 0, 0);
+    create_surroundings();
+    create_tabletop_table(0, 10, 0);
 
     // lights
-    var light = new THREE.DirectionalLight(0xffffff, 1);
-    scene.add(light)
-     
-    var light = new THREE.AmbientLight(0x404040); // soft white light
-    scene.add(light);
+    illuminate();
 
     
 }
@@ -52,4 +50,27 @@ function animate() {
 
 function render() {
     renderer.render(scene, camera);
+}
+
+function load_gltf(x_koord, y_koord, z_koord, scaling, rot_x, rot_y, rot_z, path) {
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('gltf/' + path + '/scene.gltf', function (gltf) {
+        var mesh = gltf.scene;
+        mesh.position.set(x_koord, y_koord, z_koord);
+        mesh.scale.set(scaling, scaling, scaling);
+        mesh.rotation.x = THREE.Math.degToRad(rot_x);
+        mesh.rotation.y = THREE.Math.degToRad(rot_y);
+        mesh.rotation.z = THREE.Math.degToRad(rot_z);
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+        scene.add(mesh);
+
+        gltf.animations; // Array<THREE.AnimationClip>
+        gltf.scene; // THREE.Scene
+        gltf.scenes; // Array<THREE.Scene>
+        gltf.cameras; // Array<THREE.Camera>
+        gltf.asset; // Object
+
+    });
 }

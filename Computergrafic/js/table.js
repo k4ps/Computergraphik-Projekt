@@ -3,32 +3,54 @@ var dice_materials;
 function create_tabletop_table(x_koord, y_koord, z_koord) {
 
     create_table(x_koord, y_koord, z_koord);
-    // create_dice_set(0, 10, 0);
-    // load_dice_set(15,5,15);
-    load_dragon_statue(x_koord + 0, y_koord + 22.8, z_koord + 0);
-    load_bowser_dice_tower(x_koord + 33, y_koord + 0, z_koord - 75);
-
-    load_archer(x_koord - 20, y_koord + 0, z_koord + 30);
-    load_bard(x_koord + 10, y_koord + 0, z_koord + 10);
-    load_barbarian(x_koord - 15, y_koord + 0, z_koord + 10);
-    load_croc(x_koord + 20, y_koord + 0, z_koord - 25)
-    
-    load_dice_set_3(x_koord - 38, y_koord - 4 , z_koord - 10, 0, 'white');
     create_character_sheet(x_koord - 30, y_koord + 0.2, z_koord - 10, -90, 0, 0, 'images/cs-sven.png');
-
-    load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
     create_character_sheet(x_koord + 30, y_koord + 0.2, z_koord - 10, -90, 0, 180, 'images/cs-2.png');
-
-    load_dice_set_3(x_koord - 33, y_koord - 4, z_koord + 57, 90, 'blue');
     create_character_sheet(x_koord - 25, y_koord + 0.2, z_koord + 70, -90, 0, -90, 'images/cs-3.png');
-
-    load_dice_set_3(x_koord + 34, y_koord - 4, z_koord + 72, 180, 'yellow');
     create_character_sheet(x_koord + 26, y_koord + 0.2, z_koord + 83, -90, 0, 90, 'images/cs-4.png');
-
-
-    load_dice_set_3(x_koord + 20, y_koord - 4, z_koord - 88, 180, 'black');
     create_gm_screen(x_koord + 25, y_koord + 15, z_koord - 80, 270);
     create_playbook(x_koord - 45, y_koord + 7.8, z_koord - 100);
+
+    // Importet 3D Models below
+
+    // Lade Dice Set von JayDesigns3D 
+    // Avaiable under:      https://sketchfab.com/models/163950cff9694fe1a686d22fe7737236
+    // load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
+    load_gltf(x_koord + 38, y_koord + 0, z_koord - 10, 1.5, 0, 0, 0, 'dungeons_and_dragons_dice_set');
+
+    // Lade Dice Set von Johannes Rasinkangas
+    // Avaiable under:      https://sketchfab.com/models/201c53411876498ea62394adcb5ba5e9
+    // Das Original war farblos. Die benutzten Modelle wurde von uns lediglich eingefaerbt.
+    load_gltf(x_koord - 38, y_koord - 4, z_koord - 10, 75, 90, 0, 0, 'dice_set_white');
+    load_gltf(x_koord - 33, y_koord - 4, z_koord + 57, 75, 90, 0, 90, 'dice_set_blue');
+    load_gltf(x_koord + 34, y_koord - 4, z_koord + 72, 75, 90, 0, 180, 'dice_set_yellow');
+    load_gltf(x_koord + 20, y_koord - 4, z_koord - 88, 75, 90, 0, 180, 'dice_set_black');
+
+    // Lade Bowser Castle Dice Tower von Toxicsquall 
+    // Avaiable under:      https://sketchfab.com/models/7be72f58eb1c43cb8450442a17a98970
+    // Das Original wurde von uns lediglich neu eingefärbt.
+    load_gltf(x_koord + 33, y_koord + 0, z_koord - 75, 100, 0, -30, 0, 'bowsers_castle_dice_tower');    
+
+    
+
+    // Lade Dragon Statue von Ashraf Bouhadida 
+    // Avaiable under:      https://sketchfab.com/models/8d6c9e00b6234ae48a9ba8373d1a8b8f
+    load_gltf(x_koord + 0, y_koord + 22.8, z_koord + 0, 3, 0, 0, 0, 'dragon_decimated');    
+
+    // Lade Bard Statue von Hunter Black 
+    // Avaiable under:      https://sketchfab.com/models/0edb7e0bd2b94cf883fc082730c8c32d
+    load_gltf(x_koord + 10, y_koord + 0, z_koord + 10, 4, 0, 180, 0, 'bard');
+
+    // Lade Barbarian Statue von Fed Tabula
+    // Avaiable under:      https://sketchfab.com/models/8637ae16b7384a3f9e72f0ebaa01fc65
+    load_gltf(x_koord - 15, y_koord + 0, z_koord + 10, 0.25, 0, 135, 0, 'barbarian');
+
+    // Lade Captain Croc Statue von Lanz 
+    // Avaiable under:      https://sketchfab.com/models/14e1fc333ae94c299d6e42df1b239eab
+    load_gltf(x_koord + 20, y_koord + 0, z_koord - 25, 0.25, 0, 0, 0, 'captain_croc'); 
+
+    // Lade Archer Figur von  jakatoa 
+    // Avaiable under:      https://sketchfab.com/models/8cf2507731a04e1cb74c01a1b5e094d1
+    load_gltf(x_koord - 20, y_koord + 0, z_koord + 30, 0.4, 5.5, -90, 1, 'elven_archer');
 }
 
 // Erstellt die Geometry für einen Tisch, welcher im Endeffekt ein Billiardtisch ist und auch die selben Maße hat wie einer
@@ -41,7 +63,7 @@ function create_table(x_koord, y_koord, z_koord) {
     // Benoetigte Variablen
     var tischbreite = 112;
     var tischlaenge = 224;
-    var beinhoehe = 70;
+    var beinhoehe = 80;
     var beinbreite = tischbreite / 8;
     var kantenbreite = beinbreite;
     var filzbreite = tischbreite - 2 * kantenbreite;
@@ -157,66 +179,6 @@ function create_table(x_koord, y_koord, z_koord) {
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     scene.add(mesh);
-}
-
-function create_dice_set(x_koord, y_koord, z_koord) {
-    var default_mat = new THREE.MeshLambertMaterial({ color: 0xffffff });
-    var loader = new THREE.TextureLoader();
-
-    // d4
-    var geometry = new THREE.TetrahedronGeometry(0.75);
-    load_texture_dice(4, 0xffffff);
-    var mesh = new THREE.Mesh(geometry, dice_materials);
-    mesh.position.set(x_koord + 1.5, y_koord + 0.5, z_koord - 1);
-    mesh.castShadow = true;
-    mesh.receiveShadow = true;
-    scene.add(mesh);
-
-    // d6
-    load_texture_dice(6, 0xffffff);
-    var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var cube = new THREE.Mesh(geometry, dice_materials);
-    cube.position.set(x_koord, y_koord + 0.5, z_koord);
-    cube.castShadow = true;
-    cube.receiveShadow = true;
-    scene.add(cube);
-
-    // d8
-    var geometry = new THREE.OctahedronGeometry(0.75);
-    load_texture_dice(8, 0xffffff);
-    var mesh = new THREE.Mesh(geometry, dice_materials);
-    mesh.position.set(x_koord - 1.5, y_koord + 0.75, z_koord - 1.5);
-    mesh.castShadow = true;
-    mesh.receiveShadow = true;
-    scene.add(mesh);
-    // d12
-    var geometry = new THREE.DodecahedronGeometry(0.75);
-    var mesh = new THREE.Mesh(geometry, default_mat);
-    mesh.position.set(x_koord - 1.5, y_koord + 0.75, z_koord + 1.5);
-    mesh.castShadow = true;
-    mesh.receiveShadow = true;
-    scene.add(mesh);
-
-    // d20
-    var geometry = new THREE.IcosahedronGeometry(1);
-    var mesh = new THREE.Mesh(geometry, default_mat);
-    mesh.position.set(x_koord + 2, y_koord + 1, z_koord + 2);
-    mesh.rotation.z = THREE.Math.degToRad(72);
-    mesh.castShadow = true;
-    mesh.receiveShadow = true;
-    scene.add(mesh);
-}
-
-function load_texture_dice(dice_type, dice_color) {
-    dice_materials = [];
-    for (var i = 1; i <= dice_type; i++) {
-        var texture = new THREE.TextureLoader().load('images/' + i + '.png');
-        texture.wrapT = texture.wrapS = THREE.MirroredRepeatWrapping;
-        //texture.center = (0.1, 0.1);
-        texture.anisotropy = 8
-        var material = new THREE.MeshBasicMaterial({ color: dice_color, map: texture });
-        dice_materials.push(material);
-    }
 }
 
 function create_character_sheet(x_koord, y_koord, z_koord, x_rot, y_rot, z_rot, path_to_image) {
@@ -354,220 +316,3 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     plane.receiveShadow = true;
     scene.add(plane);
 }
-
-// Importet 3D Models below
-
-// Original Done by:                   Toxicsquall 
-// Avaiable under:      https://sketchfab.com/models/7be72f58eb1c43cb8450442a17a98970
-// Das Original wurde von uns lediglich neu eingefärbt.
-function load_bowser_dice_tower(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/bowsers_castle_dice_tower/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.rotation.x = THREE.Math.degToRad(0);
-        mesh.rotation.y = THREE.Math.degToRad(-30);
-        var scaling = 100;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   Mathieu Vaillancourt 
-// Avaiable under:      https://sketchfab.com/models/42e434900ee84225b576415d4d856bed
-function load_dice_set_1(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/rpg dice set/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   JayDesigns3D 
-// Avaiable under:      https://sketchfab.com/models/163950cff9694fe1a686d22fe7737236
-function load_dice_set_2(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/dungeons_and_dragons_dice_set/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        var scaling = 1.5;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   Johannes Rasinkangas
-// Avaiable under:      https://sketchfab.com/models/201c53411876498ea62394adcb5ba5e9
-// Das Original war farblos. Die benutzten Modelle wurde von uns lediglich eingefaerbt.
-function load_dice_set_3(x_koord, y_koord, z_koord, y_rot, farbe) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/dice_set_' + farbe + '/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        var scaling = 75;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        mesh.rotation.x = THREE.Math.degToRad(90);
-        mesh.rotation.z = THREE.Math.degToRad(y_rot);
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   Ashraf Bouhadida 
-// Avaiable under:      https://sketchfab.com/models/8d6c9e00b6234ae48a9ba8373d1a8b8f
-function load_dragon_statue(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/dragon_decimated/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.scale.set(3, 3, 3);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-
-// Done by:                   Fed Tabula
-// Avaiable under:      https://sketchfab.com/models/8637ae16b7384a3f9e72f0ebaa01fc65
-function load_barbarian(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/barbarian/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.rotation.y = THREE.Math.degToRad(135);
-        var scaling = 0.25;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   Hunter Black 
-// Avaiable under:      https://sketchfab.com/models/0edb7e0bd2b94cf883fc082730c8c32d
-function load_bard(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/bard/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.rotation.y = THREE.Math.degToRad(180);
-        mesh.scale.set(4, 4, 4);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   jakatoa 
-// Avaiable under:      https://sketchfab.com/models/8cf2507731a04e1cb74c01a1b5e094d1
-function load_archer(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/elven_archer/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        mesh.rotation.x = THREE.Math.degToRad(5.5);
-        mesh.rotation.y = THREE.Math.degToRad(-90);
-        mesh.rotation.z = THREE.Math.degToRad(1);
-        mesh.scale.set(0.4, 0.4, 0.4);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
-// Done by:                   Lanz 
-// Avaiable under:      https://sketchfab.com/models/14e1fc333ae94c299d6e42df1b239eab
-function load_croc(x_koord, y_koord, z_koord) {
-    var loader = new THREE.GLTFLoader();
-
-    loader.load('gltf/captain_croc/scene.gltf', function (gltf) {
-        var mesh = gltf.scene;
-        mesh.position.set(x_koord, y_koord, z_koord);
-        var scaling = 0.25;
-        mesh.scale.set(scaling, scaling, scaling);
-        mesh.castShadow = true;
-        mesh.receiveShadow = true;
-        scene.add(mesh);
-
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Scene
-        gltf.scenes; // Array<THREE.Scene>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-
-    });
-}
-
