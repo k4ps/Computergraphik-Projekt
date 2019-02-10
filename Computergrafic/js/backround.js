@@ -31,7 +31,7 @@
     load_gltf(250, -60, -250, 125, 0, -90, 0, 'modern_lamp');
 
     // Lade Lamp lilang8936
-    // URL: https://sketchfab.com/models/28ed161deda24c78a4067026037c1794
+    // URL: https://sketchfab.com/models/3cb55809126e45c18c37db8328006ff2
     load_gltf(-230, 77, -20, 100, 0, 0, 0, 'ceiling_lamp');
 }
 
