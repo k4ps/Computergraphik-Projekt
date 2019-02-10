@@ -17,7 +17,7 @@ function createLight(color) {
     var newObj = new THREE.PointLight(color, 1.5, 1000);
     newObj.castShadow = true;
     newObj.shadow.camera.near = 1;
-    newObj.shadow.camera.far = 60;
+    newObj.shadow.camera.far = 600;
     newObj.shadow.bias = - 0.005;
     newObj.shadow.mapSize.width = 1024;
     newObj.shadow.mapSize.height = 1024;

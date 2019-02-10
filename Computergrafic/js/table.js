@@ -1,8 +1,8 @@
 var dice_materials;
 
-function create_tabletop_table(x_koord, y_koord, z_koord) {
+function create_tabletop_table(x_koord, y_koord, z_koord, scale) {
 
-    create_table(x_koord, y_koord, z_koord);
+    create_table(x_koord, y_koord, z_koord, scale);
     create_character_sheet(x_koord - 30, y_koord + 0.2, z_koord - 10, -90, 0, 0, 'images/cs-sven.png');
     create_character_sheet(x_koord + 30, y_koord + 0.2, z_koord - 10, -90, 0, 180, 'images/cs-2.png');
     create_character_sheet(x_koord - 25, y_koord + 0.2, z_koord + 70, -90, 0, -90, 'images/cs-3.png');
@@ -58,12 +58,12 @@ function create_tabletop_table(x_koord, y_koord, z_koord) {
 // Die Quellen der Texturen sind:
 // Holz:    https://www.moebel-und-garten.de/moebel/AS4HOME/Klebefolie-Holzdekor-Moebelfolie-Holz-Eiche-natur-dunkel-45-cm-x-200-cm-Designfolie-von-AS4HOME-104431737.jpg
 // Filz:      https://us.123rf.com/450wm/yamabikay/yamabikay1705/yamabikay170500039/77519356-gr%C3%BCne-filz-textur-f%C3%BCr-poker-ein-casino-thema-nahtloser-quadratischer-hintergrund-fliese-bereit-hochaufl%C3%B6sendes-fo.jpg?ver=6
-function create_table(x_koord, y_koord, z_koord) {
+function create_table(x_koord, y_koord, z_koord, scale) {
 
     // Benoetigte Variablen
-    var tischbreite = 112;
-    var tischlaenge = 224;
-    var beinhoehe = 80;
+    var tischbreite = 112 * scale;
+    var tischlaenge = 224 * scale;
+    var beinhoehe = 80 * scale;
     var beinbreite = tischbreite / 8;
     var kantenbreite = beinbreite;
     var filzbreite = tischbreite - 2 * kantenbreite;

@@ -17,6 +17,10 @@
     // Lade Lampe von
     // URL:
     load_gltf(-150, 40, 250, 100, 0, 0, 0, 'floor_lamp');
+
+    // Lade Delfine Dining Chair von Zuo Modern
+    // URL: https://sketchfab.com/models/d4ed4564eaf040ec99c3de008b60f6a2
+    load_gltf(-50, -40, 60, 180, 0, 90, 0, 'chair');
 }
 
 function create_backround() {

@@ -30,7 +30,7 @@ function init() {
 
     // world
     create_surroundings();
-    create_tabletop_table(0, 10, 0);
+    create_tabletop_table(0, 10, 0, 1);
 
     // lights
     illuminate();
