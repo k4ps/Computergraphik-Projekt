@@ -14,10 +14,6 @@
     // URL: https://sketchfab.com/models/78932b7ffef240379e83320660322fcd
     load_gltf(20, -15, 250, 100, 0, 180, 0, 'couch');
 
-    // Lade Lampe von
-    // URL:
-    load_gltf(-150, 40, 250, 100, 0, 0, 0, 'floor_lamp');
-
     // Lade Delfine Dining Chair von Zuo Modern
     // URL: https://sketchfab.com/models/d4ed4564eaf040ec99c3de008b60f6a2
     load_gltf(-50, -58, 110, 1000, 0, -38, 0, 'chair');
@@ -25,6 +21,18 @@
     load_gltf(-50, -58, -100, 1000, 0, -128, 0, 'chair');
     load_gltf(50, -58, 10, 1000, 0, -218, 0, 'chair');
     load_gltf(50, -58, -80, 1000, 0, -218, 0, 'chair');
+
+    // Lade Lampe von
+    // URL:
+    load_gltf(-150, 40, 250, 100, 0, 0, 0, 'floor_lamp');
+
+    // Lade Modern Lamp von r.hessens 
+    // URL: https://sketchfab.com/models/26f82e7ee59c444b9433a2458dc9451f
+    load_gltf(250, -60, -250, 125, 0, -90, 0, 'modern_lamp');
+
+    // Lade Lamp lilang8936
+    // URL: https://sketchfab.com/models/28ed161deda24c78a4067026037c1794
+    load_gltf(-230, 77, -20, 100, 0, 0, 0, 'ceiling_lamp');
 }
 
 function create_backround() {
