@@ -6,9 +6,6 @@ function create_tabletop_table(x_koord, y_koord, z_koord){
     load_dragon_statue(x_koord + 0, y_koord + 22.8, z_koord + 0);
     load_bowser_dice_tower(x_koord + 38, y_koord + 5, z_koord - 80);
 
-    var light = new THREE.DirectionalLight();
-    scene.add(light.target);
-    
     load_archer(x_koord - 20, y_koord + 0, z_koord + 30);
     load_bard(x_koord + 10, y_koord + 0, z_koord + 10);
     load_barbarian(x_koord - 15, y_koord + 0, z_koord + 10);
@@ -16,12 +13,17 @@ function create_tabletop_table(x_koord, y_koord, z_koord){
 
     load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
     load_dice_set_3(x_koord - 38, y_koord - 4.2, z_koord - 10);
+    create_character_sheet(x_koord - 30, y_koord + 0.2, z_koord - 10, -90, 0, 0, 'images/character-sheet.jpg');
 
     create_gm_screen(x_koord + 25, y_koord + 15, z_koord - 80);
-
+    create_playbook(x_koord - 45, y_koord + 7.8, z_koord - 100);
 }
 
-
+// Erstellt die Geometry für einen Tisch, welcher im Endeffekt ein Billiardtisch ist und auch die selben Maße hat wie einer
+// Der Tisch besteht aus 10 THREE.BoxGeometry, welche jeweils mit einer Textur versehen werden.
+// Die Quellen der Texturen sind:
+// Holz:    https://www.moebel-und-garten.de/moebel/AS4HOME/Klebefolie-Holzdekor-Moebelfolie-Holz-Eiche-natur-dunkel-45-cm-x-200-cm-Designfolie-von-AS4HOME-104431737.jpg
+// Filz:      https://us.123rf.com/450wm/yamabikay/yamabikay1705/yamabikay170500039/77519356-gr%C3%BCne-filz-textur-f%C3%BCr-poker-ein-casino-thema-nahtloser-quadratischer-hintergrund-fliese-bereit-hochaufl%C3%B6sendes-fo.jpg?ver=6
 function create_table(x_koord, y_koord, z_koord) {
 
     // Benoetigte Variablen
@@ -40,6 +42,7 @@ function create_table(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/holz-vert.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(2, 3);
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
 
     var mesh = new THREE.Mesh(geometry, material);
@@ -48,9 +51,10 @@ function create_table(x_koord, y_koord, z_koord) {
 
     // Filzeinlage erstellen
     var geometry = new THREE.BoxGeometry(filzbreite, 0.1, filzlaenge);
-    var texture = new THREE.TextureLoader().load('images/filz.jpg');
+    var texture = new THREE.TextureLoader().load('images/filz4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    texture.repeat.set(4, 20)
+    texture.repeat.set(4, 10)
+    texture.anisotropy = 8
     var filz = new THREE.MeshLambertMaterial({ map: texture });
     var mesh = new THREE.Mesh(geometry, filz);
     mesh.position.set(x_koord, y_koord, z_koord);
@@ -61,6 +65,7 @@ function create_table(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/holz-vert.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 10);
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
 
     // links
@@ -78,6 +83,7 @@ function create_table(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/holz-vert.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(6, 2);
+    texture.anisotropy = 8
     //texture.rotation.set(0.5);
     var material = new THREE.MeshLambertMaterial({ map: texture });
 
@@ -97,6 +103,7 @@ function create_table(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/holz-vert.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 2);
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
 
     // vorne links
@@ -155,6 +162,36 @@ function create_dice_set(x_koord, y_koord, z_koord) {
     scene.add(mesh);
 }
 
+
+function create_character_sheet(x_koord, y_koord, z_koord, x_rot, y_rot, z_rot, path_to_image) {
+    var geometry = new THREE.PlaneGeometry(21, 29.7);
+    var texture = new THREE.TextureLoader().load(path_to_image);
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
+    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord, y_koord, z_koord);
+    plane.rotation.set(THREE.Math.degToRad(x_rot), THREE.Math.degToRad(y_rot), THREE.Math.degToRad(z_rot));
+    scene.add(plane);
+}
+
+// Erzeugt THREE.PlaneGeometry und versieht sie mit Textur
+// Das Bild aus dem die Textur besteht ist Eigentum von Paizo Inc.
+// URL: https://paizo.com/image/product/catalog/PZO/PZO9036_500.jpeg
+function create_playbook(x_koord, y_koord, z_koord) {
+    var geometry = new THREE.BoxGeometry(21, 1.5, 30);
+    var texture = new THREE.TextureLoader().load('images/kingmaker-front.jpeg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord, y_koord, z_koord);
+    //plane.rotation.x = THREE.Math.degToRad(45);
+    plane.rotation.y = THREE.Math.degToRad(-45);
+    plane.rotation.z = THREE.Math.degToRad(180);
+    scene.add(plane);
+}
+
 // Erzeugt einen GM-Screen aus 4 THREE.PlaneGeometry
 // Das Bild aus dem die Front Texturen bestehen ist Eigentum von Paizo Inc.
 // URL: https://paizo.com/image/content/Secondary/PZO1113-Alt2Secondary.jpg
@@ -166,6 +203,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Vorderseite rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
@@ -175,6 +213,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Rueckseite rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture});
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
@@ -184,6 +223,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Vorderseite mitte rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-3.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
@@ -192,6 +232,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Rueckseite mitte rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-3.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
@@ -201,6 +242,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Vorderseite mitte links
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-2.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
@@ -209,6 +251,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Rueckseite mitte links
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-2.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
@@ -218,6 +261,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Vorderseite links
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-1.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 56.6, y_koord, z_koord);
@@ -227,6 +271,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     // Rueckseite links
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-1.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.anisotropy = 8
     var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 56.6, y_koord, z_koord);
