@@ -27,7 +27,7 @@ function init() {
 
 
     // world
-
+    create_backround();
     create_tabletop_table(0, 0, 0);
 
     // lights
@@ -36,6 +36,8 @@ function init() {
      
     var light = new THREE.AmbientLight(0x404040); // soft white light
     scene.add(light);
+
+    
 }
 
 //render scene
