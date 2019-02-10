@@ -155,40 +155,82 @@ function create_dice_set(x_koord, y_koord, z_koord) {
     scene.add(mesh);
 }
 
+// Erzeugt einen GM-Screen aus 4 THREE.PlaneGeometry
+// Das Bild aus dem die Front Texturen bestehen ist Eigentum von Paizo Inc.
+// URL: https://paizo.com/image/content/Secondary/PZO1113-Alt2Secondary.jpg
+// Das Bild aus dem die Back Texturen bestehen stammt von Hobbygames.ru
+// https://hobbygames.cdnvideo.ru/image/cache/hobbygames_beta/data/HobbyWorld/Pathfinder_RPG/Pathfinder_GM_Screen/Pathfinder_GM_Screen_1-1024x1024-wm.jpg
 function create_gm_screen(x_koord, y_koord, z_koord) {
     var geometry = new THREE.PlaneGeometry(21, 30, 4, 1);
+
+    // Vorderseite rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    // texture.repeat.set(1, 1);
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(45);
     scene.add(plane);
 
+    // Rueckseite rechts
+    var texture = new THREE.TextureLoader().load('images/gm-screen-back-4.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    var material = new THREE.MeshLambertMaterial({ map: texture});
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord, y_koord, z_koord);
+    plane.rotation.y = THREE.Math.degToRad(225);
+    scene.add(plane);
+
+    // Vorderseite mitte rechts
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-3.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    // texture.repeat.set(1, 1);
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
     scene.add(plane);
 
+    // Rueckseite mitte rechts
+    var texture = new THREE.TextureLoader().load('images/gm-screen-back-3.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
+    plane.rotation.y = THREE.Math.degToRad(180);
+    scene.add(plane);
+
+    // Vorderseite mitte links
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-2.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    // texture.repeat.set(1, 1);
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
     scene.add(plane);
 
+    // Rueckseite mitte links
+    var texture = new THREE.TextureLoader().load('images/gm-screen-back-2.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
+    plane.rotation.y = THREE.Math.degToRad(180);
+    scene.add(plane);
+
+    // Vorderseite links
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-1.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-    // texture.repeat.set(1, 1);
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var material = new THREE.MeshLambertMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 56.6, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(-45);
+    scene.add(plane);
+
+    // Rueckseite links
+    var texture = new THREE.TextureLoader().load('images/gm-screen-back-1.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 56.6, y_koord, z_koord);
+    plane.rotation.y = THREE.Math.degToRad(-225);
     scene.add(plane);
 }
 
