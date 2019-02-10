@@ -125,7 +125,7 @@ function create_door() {
     mesh.rotation.y = THREE.Math.degToRad(-90);
     mesh.position.x = 299.8;
     mesh.position.y = 30;
-    mesh.position.z = 250;
+    mesh.position.z = 150;
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     scene.add(mesh);
