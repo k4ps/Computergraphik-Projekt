@@ -357,8 +357,9 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
 
 // Importet 3D Models below
 
-// Done by:                   Toxicsquall 
+// Original Done by:                   Toxicsquall 
 // Avaiable under:      https://sketchfab.com/models/7be72f58eb1c43cb8450442a17a98970
+// Das Original wurde von uns lediglich neu eingefärbt.
 function load_bowser_dice_tower(x_koord, y_koord, z_koord) {
     var loader = new THREE.GLTFLoader();
 

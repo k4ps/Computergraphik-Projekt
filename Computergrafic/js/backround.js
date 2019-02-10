@@ -12,6 +12,7 @@
     scene.add(mesh);
 
     load_lamp(100, 40, -175);
+    create_teppich();
 
 }
 
@@ -36,4 +37,21 @@ function load_lamp(x_koord, y_koord, z_koord) {
         gltf.asset; // Object
 
     });
+}
+
+// Lade Teppich Textur
+// Quelle: https://i.pinimg.com/originals/30/a6/b2/30a6b226bf34a6e4dbf405c24fefadaa.jpg
+function create_teppich() {
+    var geometry = new THREE.PlaneGeometry(250, 350);
+    var texture = new THREE.TextureLoader().load('images/teppich3.jpg');
+    texture.wrapS = THREE.MirroredRepeatWrapping;
+    texture.wrapT = THREE.MirroredRepeatWrapping;
+    texture.repeat.set(10, 10);
+    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var mesh = new THREE.Mesh(geometry, material);
+    mesh.rotation.x = THREE.Math.degToRad(-90);
+    mesh.position.y = -59;
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    scene.add(mesh);
 }
