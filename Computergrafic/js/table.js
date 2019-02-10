@@ -13,18 +13,20 @@ function create_tabletop_table(x_koord, y_koord, z_koord) {
     load_barbarian(x_koord - 15, y_koord + 0, z_koord + 10);
     load_croc(x_koord + 20, y_koord + 0, z_koord - 25)
     
-    load_dice_set_3(x_koord - 38, y_koord - 4.2, z_koord - 10, 0);
+    load_dice_set_3(x_koord - 38, y_koord - 4.2 , z_koord - 10, 0, 'white');
     create_character_sheet(x_koord - 30, y_koord + 0.2, z_koord - 10, -90, 0, 0, 'images/cs-sven.png');
 
     load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
     create_character_sheet(x_koord + 30, y_koord + 0.2, z_koord - 10, -90, 0, 180, 'images/cs-2.png');
 
-    load_dice_set_3(x_koord - 33, y_koord - 4.2, z_koord + 57, 90);
+    load_dice_set_3(x_koord - 33, y_koord - 4.2, z_koord + 57, 90, 'blue');
     create_character_sheet(x_koord - 25, y_koord + 0.2, z_koord + 70, -90, 0, -90, 'images/cs-3.png');
 
-    load_dice_set_3(x_koord + 34, y_koord - 4.2, z_koord + 72, 180);
+    load_dice_set_3(x_koord + 34, y_koord - 4.2, z_koord + 72, 180, 'yellow');
     create_character_sheet(x_koord + 26, y_koord + 0.2, z_koord + 83, -90, 0, 90, 'images/cs-4.png');
 
+
+    load_dice_set_3(x_koord + 20, y_koord - 4.2, z_koord - 88, 180, 'black');
     create_gm_screen(x_koord + 25, y_koord + 15, z_koord - 80, 270);
     create_playbook(x_koord - 45, y_koord + 7.8, z_koord - 100);
 }
@@ -425,17 +427,19 @@ function load_dice_set_2(x_koord, y_koord, z_koord) {
 
 // Done by:                   Johannes Rasinkangas
 // Avaiable under:      https://sketchfab.com/models/201c53411876498ea62394adcb5ba5e9
-function load_dice_set_3(x_koord, y_koord, z_koord, y_rot) {
+// Das Original war farblos. Die benutzten Modelle wurde von uns lediglich eingefaerbt.
+function load_dice_set_3(x_koord, y_koord, z_koord, y_rot, farbe) {
     var loader = new THREE.GLTFLoader();
 
-    loader.load('gltf/dice_set/scene.gltf', function (gltf) {
+    loader.load('gltf/dice_set_' + farbe + '/scene.gltf', function (gltf) {
         var mesh = gltf.scene;
         mesh.position.set(x_koord, y_koord, z_koord);
-        var scaling = 2;
+        var scaling = 75;
         mesh.scale.set(scaling, scaling, scaling);
         mesh.castShadow = true;
         mesh.receiveShadow = true;
-        mesh.rotation.y = THREE.Math.degToRad(y_rot);
+        mesh.rotation.x = THREE.Math.degToRad(90);
+        mesh.rotation.z = THREE.Math.degToRad(y_rot);
         scene.add(mesh);
 
         gltf.animations; // Array<THREE.AnimationClip>
