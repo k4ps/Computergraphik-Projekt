@@ -5,6 +5,9 @@ function create_tabletop_table(x_koord, y_koord, z_koord){
     // load_dice_set(15,5,15);
     load_dragon_statue(x_koord + 0, y_koord + 22.8, z_koord + 0);
     load_bowser_dice_tower(x_koord + 38, y_koord + 5, z_koord - 80);
+
+    var light = new THREE.DirectionalLight();
+    scene.add(light.target);
     
     load_archer(x_koord - 20, y_koord + 0, z_koord + 30);
     load_bard(x_koord + 10, y_koord + 0, z_koord + 10);
@@ -13,6 +16,9 @@ function create_tabletop_table(x_koord, y_koord, z_koord){
 
     load_dice_set_2(x_koord + 38, y_koord + 0, z_koord - 10);
     load_dice_set_3(x_koord - 38, y_koord - 4.2, z_koord - 10);
+
+    create_gm_screen(x_koord + 25, y_koord + 15, z_koord - 80);
+
 }
 
 
@@ -147,6 +153,43 @@ function create_dice_set(x_koord, y_koord, z_koord) {
     mesh.position.set(x_koord + 2, y_koord + 1, z_koord + 2);
     mesh.rotation.z = THREE.Math.degToRad(72);
     scene.add(mesh);
+}
+
+function create_gm_screen(x_koord, y_koord, z_koord) {
+    var geometry = new THREE.PlaneGeometry(21, 30, 4, 1);
+    var texture = new THREE.TextureLoader().load('images/gm-screen-front-4.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    // texture.repeat.set(1, 1);
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord, y_koord, z_koord);
+    plane.rotation.y = THREE.Math.degToRad(45);
+    scene.add(plane);
+
+    var texture = new THREE.TextureLoader().load('images/gm-screen-front-3.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    // texture.repeat.set(1, 1);
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
+    scene.add(plane);
+
+    var texture = new THREE.TextureLoader().load('images/gm-screen-front-2.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    // texture.repeat.set(1, 1);
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
+    scene.add(plane);
+
+    var texture = new THREE.TextureLoader().load('images/gm-screen-front-1.jpg');
+    texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
+    // texture.repeat.set(1, 1);
+    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var plane = new THREE.Mesh(geometry, material);
+    plane.position.set(x_koord - 56.6, y_koord, z_koord);
+    plane.rotation.y = THREE.Math.degToRad(-45);
+    scene.add(plane);
 }
 
 // Importet 3D Models below
