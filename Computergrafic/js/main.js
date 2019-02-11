@@ -1,4 +1,4 @@
-﻿var camera, scene, renderer, controls;
+var camera, scene, renderer, controls;
 
 
 init();
@@ -16,8 +16,12 @@ function init() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.BasicShadowMap;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     document.body.appendChild(renderer.domElement);
+    
+    // stats
+    stats = new Stats();
+    document.body.appendChild( stats.dom );
 
     // camera 
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
