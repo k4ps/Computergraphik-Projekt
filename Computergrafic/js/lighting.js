@@ -3,7 +3,7 @@ function illuminate() {
     scene.add(light);
 
     var ceiling_light = create_light_ceiling(0xa0a0a0);
-    //var ceiling_light = createLight(0x404040, 0.3);
+    // var ceiling_light = createLight(0x404040, 0.3);
     ceiling_light.position.set(0.8, 101, -10.7);
     scene.add(ceiling_light);
 
@@ -14,12 +14,20 @@ function illuminate() {
     var light2 = createLight(0x990000, 1.9);
     light2.position.set (253.5, 116.9, -250);
     scene.add(light2);
+
+    var light3 = createLight(0x990000, 1.9);
+    light3.position.set(235, 83.5, -251.4);
+    scene.add(light3);
+
+    var light4 = createLight(0x990000, 1.9);
+    light4.position.set(250.2, 83.5, -236.7);
+    scene.add(light4);
 }
 
 function createLight(color, size) {
     var newObj = new THREE.PointLight(color, 1.5, 500, 3);
     newObj.castShadow = false;
-    newObj.shadow.camera.near = 1;
+    newObj.shadow.camera.near = 0.1;
     newObj.shadow.camera.far = 300;
     newObj.shadow.bias = -0.00001;
     newObj.shadow.mapSize.width = 2048;
@@ -35,12 +43,13 @@ function createLight(color, size) {
 function create_light_ceiling(color, pos_x, pos_y, pos_z) {
     var newObj = new THREE.PointLight(color, 1.5, 1000, 3);
     newObj.castShadow = true;
-    newObj.shadow.camera.near = 1;
+    newObj.shadow.camera.near = 0.1;
     newObj.shadow.camera.far = 600;
     newObj.shadow.bias = -0.00001;
     newObj.shadow.mapSize.width = 2048;
     newObj.shadow.mapSize.height = 2048;
-    var geometry = new THREE.CylinderBufferGeometry(2, 6, 9, 32);
+    var geometry = new THREE.SphereBufferGeometry(0.3, 12, 12);
+    // var geometry = new THREE.CylinderBufferGeometry(2, 6, 9, 32);
     var material = new THREE.MeshBasicMaterial({ color: color });
     material.color.multiplyScalar(1.5);
     var mesh = new THREE.Mesh(geometry, material);
