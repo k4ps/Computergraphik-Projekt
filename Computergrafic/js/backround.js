@@ -22,14 +22,18 @@
     load_gltf(50, -58, 10, 1000, 0, -218, 0, 'chair');
     load_gltf(50, -58, -80, 1000, 0, -218, 0, 'chair');
 
-    // Lade Lampe von
-    // URL:
+    // Lade Lampe von https://sketchfab.com/3d-models/floor-lamp-33eb258d9873435690254cfbb0ea46ec
+    // URL: https://sketchfab.com/3d-models/floor-lamp-33eb258d9873435690254cfbb0ea46ec
     load_gltf(-150, 40, 250, 100, 0, 0, 0, 'floor_lamp');
 
     // Lade Modern Lamp von r.hessens 
     // URL: https://sketchfab.com/models/26f82e7ee59c444b9433a2458dc9451f
-    load_gltf(250, -60, -250, 125, 0, -90, 0, 'modern_lamp');
+    //load_gltf(250, -60, -250, 125, 0, -90, 0, 'modern_lamp');
     // load_gltf(250, -60, -250, 1250 * 4, 90, 0, 90, 'modern_lamp');
+
+    // Lade Lampe von fatelinha 
+    // URL: https://sketchfab.com/3d-models/lamp-a4c5880f7edc4fbfbb132323ae5182d2
+    load_gltf(250, -60, -250, 20, 0, 0, 0, 'lamp');
 
     // Lade Lamp lilang8936
     // URL: https://sketchfab.com/models/3cb55809126e45c18c37db8328006ff2

@@ -1,4 +1,4 @@
-var camera, scene, renderer, controls;
+﻿var camera, scene, renderer, controls;
 
 
 init();
@@ -62,9 +62,7 @@ function load_gltf(x_koord, y_koord, z_koord, scaling, rot_x, rot_y, rot_z, path
     loader.load('gltf/' + path + '/scene.gltf', function (gltf) {
         var mesh = gltf.scene;
         mesh.traverse(function (node) {
-
-            if (node instanceof THREE.Mesh) { node.castShadow = true; mesh.receiveShadow = true; }
-
+            if (node instanceof THREE.Mesh) { node.castShadow = true; node.receiveShadow = true;}
         });
         mesh.position.set(x_koord, y_koord, z_koord);
         mesh.scale.set(scaling, scaling, scaling);
