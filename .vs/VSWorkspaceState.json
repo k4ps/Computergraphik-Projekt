@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Computergrafic",
+    "\\Computergrafic\\gltf\\bowsers_castle_dice_tower",
+    "\\Computergrafic\\gltf\\dungeons_and_dragons_dice_set",
     "\\Computergrafic\\js"
   ],
-  "SelectedNode": "\\Computergrafic.sln",
+  "SelectedNode": "\\Computergrafic\\js\\lighting.js",
   "PreviewInSolutionExplorer": false
 }
