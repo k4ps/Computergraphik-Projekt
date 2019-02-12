@@ -26,7 +26,7 @@ function illuminate() {
 
 function createLight(color, size) {
     var newObj = new THREE.PointLight(color, 1.5, 500, 3);
-    newObj.castShadow = false;
+    newObj.castShadow = true;
     newObj.shadow.camera.near = 0.1;
     newObj.shadow.camera.far = 300;
     newObj.shadow.bias = -0.00001;

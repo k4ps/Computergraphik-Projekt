@@ -69,7 +69,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     var filzbreite = tischbreite - 2 * kantenbreite;
     var filzlaenge = tischlaenge - 2 * kantenbreite;
 
-    var default_mat = new THREE.MeshLambertMaterial();
+    var default_mat = new THREE.MeshPhongMaterial();
 
     // Tischplatte erstellen
     var geometry = new THREE.BoxGeometry(tischbreite - 2 * kantenbreite, kantenbreite / 2, tischlaenge - 2 * kantenbreite);
@@ -77,7 +77,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(2, 3);
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
 
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(x_koord, y_koord - kantenbreite / 4, z_koord);
@@ -91,7 +91,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(4, 10)
     texture.anisotropy = 8
-    var filz = new THREE.MeshLambertMaterial({ map: texture });
+    var filz = new THREE.MeshPhongMaterial({ map: texture });
     var mesh = new THREE.Mesh(geometry, filz);
     mesh.position.set(x_koord, y_koord, z_koord);
     mesh.castShadow = true;
@@ -104,7 +104,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 10);
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
 
     // links
     var mesh = new THREE.Mesh(geometry, material);
@@ -127,7 +127,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     texture.repeat.set(6, 2);
     texture.anisotropy = 8
     //texture.rotation.set(0.5);
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
 
     // vorne
     var mesh = new THREE.Mesh(geometry, material);
@@ -150,7 +150,7 @@ function create_table(x_koord, y_koord, z_koord, scale) {
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 2);
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
 
     // vorne links
     var mesh = new THREE.Mesh(geometry, material);
@@ -186,7 +186,7 @@ function create_character_sheet(x_koord, y_koord, z_koord, x_rot, y_rot, z_rot, 
     var texture = new THREE.TextureLoader().load(path_to_image);
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
     plane.rotation.set(THREE.Math.degToRad(x_rot), THREE.Math.degToRad(y_rot), THREE.Math.degToRad(z_rot));
@@ -203,7 +203,7 @@ function create_playbook(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/kingmaker-front.jpeg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide });
+    var material = new THREE.MeshPhongMaterial({ map: texture, side: THREE.DoubleSide });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
     //plane.rotation.x = THREE.Math.degToRad(45);
@@ -226,7 +226,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(45);
@@ -238,7 +238,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-4.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture});
+    var material = new THREE.MeshPhongMaterial({ map: texture});
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(225);
@@ -250,7 +250,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-3.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
     plane.castShadow = true;
@@ -261,7 +261,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-3.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 17.8, y_koord, z_koord + 7.4);
     plane.rotation.y = THREE.Math.degToRad(180);
@@ -273,7 +273,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-2.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
     plane.castShadow = true;
@@ -284,7 +284,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-2.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 38.8, y_koord, z_koord + 7.4);
     plane.rotation.y = THREE.Math.degToRad(180);
@@ -296,7 +296,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-front-1.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 56.6, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(-45);
@@ -308,7 +308,7 @@ function create_gm_screen(x_koord, y_koord, z_koord) {
     var texture = new THREE.TextureLoader().load('images/gm-screen-back-1.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.anisotropy = 8
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var plane = new THREE.Mesh(geometry, material);
     plane.position.set(x_koord - 56.6, y_koord, z_koord);
     plane.rotation.y = THREE.Math.degToRad(-225);

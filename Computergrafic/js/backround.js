@@ -29,6 +29,7 @@
     // Lade Modern Lamp von r.hessens 
     // URL: https://sketchfab.com/models/26f82e7ee59c444b9433a2458dc9451f
     load_gltf(250, -60, -250, 125, 0, -90, 0, 'modern_lamp');
+    // load_gltf(250, -60, -250, 1250 * 4, 90, 0, 90, 'modern_lamp');
 
     // Lade Lamp lilang8936
     // URL: https://sketchfab.com/models/3cb55809126e45c18c37db8328006ff2
@@ -46,21 +47,21 @@ function create_backround() {
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(3, 2);
     texture.anisotropy = 8;
-    var floor = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide});
+    var floor = new THREE.MeshPhongMaterial({ map: texture, side: THREE.BackSide});
 
     // Quelle:      https://c1.staticflickr.com/9/8244/8590273977_dab3ccd0bf_b.jpg
     var texture = loader.load('images/wall.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(2, 1);
     texture.anisotropy = 8;
-    var wall = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide });
+    var wall = new THREE.MeshPhongMaterial({ map: texture, side: THREE.BackSide });
 
     // Quelle:      http://hires.patternpictures.com/PP17272013-Subtle-Plaster-Texture-White-Wall.jpg
     var texture = loader.load('images/decke.jpg');
     texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(2, 2);
     texture.anisotropy = 8;
-    var ceiling = new THREE.MeshLambertMaterial({ map: texture, side: THREE.BackSide });
+    var ceiling = new THREE.MeshPhongMaterial({ map: texture, side: THREE.BackSide });
 
     const materials = [wall, wall, ceiling, floor, wall, wall];
 
@@ -81,7 +82,7 @@ function create_teppich() {
     texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(10, 10);
     texture.anisotropy = 8;
-    var material = new THREE.MeshLambertMaterial({ map: texture });
+    var material = new THREE.MeshPhongMaterial({ map: texture });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.rotation.x = THREE.Math.degToRad(-90);
     mesh.position.y = -59;
@@ -99,7 +100,7 @@ function create_bookshelf() {
     texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(2, 1);
     texture.anisotropy = 8;
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var material = new THREE.MeshPhongMaterial({ map: texture, side: THREE.TwoSide });
     var mesh = new THREE.Mesh(geometry, material);
     //mesh.rotation.x = THREE.Math.degToRad(-90);
     mesh.rotation.y = THREE.Math.degToRad(90);
@@ -119,7 +120,7 @@ function create_door() {
     texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 1);
     texture.anisotropy = 8;
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var material = new THREE.MeshPhongMaterial({ map: texture, side: THREE.TwoSide });
     var mesh = new THREE.Mesh(geometry, material);
     //mesh.rotation.x = THREE.Math.degToRad(-90);
     mesh.rotation.y = THREE.Math.degToRad(-90);
@@ -141,7 +142,7 @@ function create_poster(size_w, size_h, pos_x, pos_y, pos_z, rot_x, rot_y, rot_z,
     texture.wrapT = THREE.MirroredRepeatWrapping;
     texture.repeat.set(1, 1);
     texture.anisotropy = 8;
-    var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.TwoSide });
+    var material = new THREE.MeshPhongMaterial({ map: texture, side: THREE.TwoSide });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(pos_x, pos_y, pos_z);
     mesh.rotation.set(THREE.Math.degToRad(rot_x), THREE.Math.degToRad(rot_y), THREE.Math.degToRad(rot_z));
