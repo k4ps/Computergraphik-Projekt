@@ -27,27 +27,29 @@ function illuminate() {
 }
 
 function createLight(color, size) {
-    var newObj = new THREE.PointLight(color, 1.5, 500, 3);
+    var newObj = new THREE.PointLight(color, 1, 500, 2);
     newObj.castShadow = true;
     newObj.shadow.camera.near = 0.1;
     newObj.shadow.camera.far = 1000;
+    newObj.shadow.radius = 80;
     newObj.shadow.bias = -0.00001;
     newObj.shadow.mapSize.width = 2048;
     newObj.shadow.mapSize.height = 2048;
     var geometry = new THREE.SphereBufferGeometry(size, 12, 12);
     var material = new THREE.MeshBasicMaterial({ color: color });
     material.color.multiplyScalar(1.5);
-    //material.transparent = true
+    material.transparent = true
     var sphere = new THREE.Mesh(geometry, material);
     newObj.add(sphere);
     return newObj;
 }
 
 function createLighttube(color, radius, size, rot_x, rot_y, rot_z) {
-    var newObj = new THREE.PointLight(color, 1.5, 500, 3);
+    var newObj = new THREE.PointLight(color, 1, 500, 2);
     newObj.castShadow = true;
     newObj.shadow.camera.near = 0.1;
     newObj.shadow.camera.far = 1000;
+    newObj.shadow.radius = 80;
     newObj.shadow.bias = -0.00001;
     newObj.shadow.mapSize.width = 2048;
     newObj.shadow.mapSize.height = 2048;
@@ -62,10 +64,11 @@ function createLighttube(color, radius, size, rot_x, rot_y, rot_z) {
 }
 
 function create_light_ceiling(color, pos_x, pos_y, pos_z) {
-    var newObj = new THREE.PointLight(color, 1.5, 1000, 3);
+    var newObj = new THREE.PointLight(color, 1.5, 1000, 5);
     newObj.castShadow = true;
     newObj.shadow.camera.near = 0.1;
-    newObj.shadow.camera.far = 2000;
+    newObj.shadow.camera.far = 1000;
+    newObj.shadow.radius = 80;
     newObj.shadow.bias = -0.00001;
     newObj.shadow.mapSize.width = 2048;
     newObj.shadow.mapSize.height = 2048;

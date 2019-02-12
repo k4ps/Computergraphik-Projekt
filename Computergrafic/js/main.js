@@ -13,6 +13,7 @@ function init() {
 
     // renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
+    //renderer.physicallyCorrectLights = true;
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
@@ -62,7 +63,9 @@ function load_gltf(x_koord, y_koord, z_koord, scaling, rot_x, rot_y, rot_z, path
     loader.load('gltf/' + path + '/scene.gltf', function (gltf) {
         var mesh = gltf.scene;
         mesh.traverse(function (node) {
-            if (node instanceof THREE.Mesh) { node.castShadow = true; node.receiveShadow = true;}
+            if (node instanceof THREE.Mesh) {
+            node.castShadow = true; //node.receiveShadow = true;
+            }
         });
         mesh.position.set(x_koord, y_koord, z_koord);
         mesh.scale.set(scaling, scaling, scaling);
